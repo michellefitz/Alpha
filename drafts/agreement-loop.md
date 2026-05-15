@@ -15,13 +15,13 @@ Round and round, fast and frictionless. I see it everywhere: feature ideas, blog
 
 The work feels productive in the moment. The work goes entirely uncontested, too. By the time it's "finished," you have a polished version of whatever you came in with. I've been self high-fiving with the AI the whole way through.
 
-Part of this is sycophancy on the AI side: models trained on human ratings learn to lean toward agreement, since humans rate agreeable responses higher. Anthropic documented it in a 2023 paper. OpenAI shipped an over-sycophantic GPT-4o update last spring and rolled it back days later, after their own Model Behavior team had flagged it pre-launch. The labs know where the dial is set.
+Part of this is sycophancy on the AI side: models trained on human ratings learn to lean toward agreement, since humans rate agreeable responses higher. Anthropic [documented it in a 2023 paper](https://arxiv.org/abs/2310.13548). OpenAI [shipped an over-sycophantic GPT-4o update last spring and rolled it back days later](https://openai.com/index/sycophancy-in-gpt-4o/), after their own Model Behavior team had flagged it pre-launch. The labs know where the dial is set.
 
 But sycophancy is only half of the loop. The other half is yours: you ask for options, take the recommended one, anchor on whatever's offered first, stop generating alternatives of your own. Each turn reinforces both halves, and they produce the loop together.
 
 The loop does its worst damage in judgement-heavy work. For code, translation, factual recall, fast and agreeable is usually right. The catch appears where no clean ground truth exists: whether to build a feature, how to frame an argument, what the strongest counter is. These are exactly the tasks where you most need challenge, and exactly where the loop is most seductive.
 
-Andrej Karpathy posted earlier this year that he'd spent four hours using an LLM to refine an argument and come away convinced. Then he asked the same model to argue the opposite, and it demolished his original position. The model agrees just as well whether your direction is right or not.
+[Andrej Karpathy posted earlier this year](https://x.com/karpathy/status/2037921699824607591) that he'd spent four hours using an LLM to refine an argument and come away convinced. Then he asked the same model to argue the opposite, and it demolished his original position. The model agrees just as well whether your direction is right or not.
 
 ## What to do
 
