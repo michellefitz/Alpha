@@ -13,13 +13,13 @@ I want to name a pattern in AI-assisted work: the agreement loop.
 
 Round and round, fast and frictionless. I see it everywhere: feature ideas, blog posts, strategy decks, travel plans, anywhere the "right answer" isn't obvious.
 
-The work feels productive in the moment. It is also entirely uncontested. By the time it's "finished," you have a polished version of whatever you came in with. I've been self high-fiving with the AI the whole way through.
+The work feels productive in the moment. The work goes entirely uncontested, too. By the time it's "finished," you have a polished version of whatever you came in with. I've been self high-fiving with the AI the whole way through.
 
 Part of this is sycophancy on the AI side: models trained on human ratings learn to lean toward agreement, since humans rate agreeable responses higher. Anthropic documented it in a 2023 paper. OpenAI shipped an over-sycophantic GPT-4o update last spring and rolled it back days later, after their own Model Behavior team had flagged it pre-launch. The labs know where the dial is set.
 
 But sycophancy is only half of the loop. The other half is yours: you ask for options, take the recommended one, anchor on whatever's offered first, stop generating alternatives of your own. Each turn reinforces both halves, and they produce the loop together.
 
-This is most damaging in judgement-heavy work. For code, translation, factual recall, fast and agreeable is usually right. The catch shows up where there isn't a clean ground truth: whether to build a feature, how to frame an argument, what the strongest counter is. These are exactly the tasks where you most need challenge, and exactly where the loop is most seductive.
+The loop does its worst damage in judgement-heavy work. For code, translation, factual recall, fast and agreeable is usually right. The catch appears where no clean ground truth exists: whether to build a feature, how to frame an argument, what the strongest counter is. These are exactly the tasks where you most need challenge, and exactly where the loop is most seductive.
 
 Andrej Karpathy posted earlier this year that he'd spent four hours using an LLM to refine an argument and come away convinced. Then he asked the same model to argue the opposite, and it demolished his original position. The model agrees just as well whether your direction is right or not.
 
@@ -56,10 +56,10 @@ Three signals you're in one:
 
 Five moves that work:
 
-1. **Argue the opposite.** Ask the AI to make the strongest case against your direction. It'll usually demolish parts of what you built. The AI isn't wrong, it just doesn't volunteer disagreement until you ask.
+1. **Argue the opposite.** Ask the AI to make the strongest case against your direction. It'll usually demolish parts of what you built. The AI isn't wrong — it just won't disagree until you ask.
 1. **Generate options before asking for them.** Write three of your own first. Otherwise the AI's first option becomes your anchor.
 1. **Use a separate agent as critic.** Fresh conversation, no shared history. Give it the work and the context, frame it as an adversary, ask for failure modes and the strongest objections. [Link to your earlier writing on this.]
 1. **Take it to a human.** A colleague, a peer, anyone who'll push. People have no structural incentive to agree with you.
 1. **Stop and write.** Close the chat. Write what you actually think, in your own words. Then go back if you still need to.
 
-The faster these tools get, the more valuable it becomes to think slowly. The speed is real and I'm not giving it up. But the friction that used to come for free, the friction of working with people who push back, isn't there anymore. If you want the speed without slipping into an agreement loop, you have to add the friction back.
+The faster these tools get, the more valuable it becomes to think slowly. The speed is real and I'm not giving it up. But the friction that used to come free — working with people who push back — is gone. If you want the speed without slipping into an agreement loop, you have to add the friction back.
