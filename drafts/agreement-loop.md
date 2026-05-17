@@ -23,6 +23,8 @@ The loop does its worst damage in judgement-heavy work. For code, translation, f
 
 [Andrej Karpathy posted earlier this year](https://x.com/karpathy/status/2037921699824607591) that he'd spent four hours using an LLM to refine an argument and come away convinced. Then he asked the same model to argue the opposite, and it demolished his original position. The model agrees just as well whether your direction is right or not.
 
+The issue isn't whether the loop makes your work worse. It might not. AI-assisted work is probably better than working alone — you get more iterations, more angles, more refinement in less time. The problem is that AI agreement mimics the feeling of external feedback, and it isn't. Your audience isn't the model. At some point the work has to meet the people it's actually for, and every hour you spend building further in the loop is an hour before that happens. It's the same trap as over-building before your first customer test: you can go very deep, feel like you're iterating, and still be working entirely from your own assumptions. The agreement loop doesn't make you wrong. It keeps you insulated longer than you'd otherwise stay.
+
 ## What to do
 
 Two halves means two fixes.
