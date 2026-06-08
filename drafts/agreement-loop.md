@@ -1,6 +1,14 @@
 # The AI Agreement Loop
 
-I want to name a pattern in AI-assisted work: the agreement loop.
+I want to name a pattern in AI-assisted work: the agreement loop. It has two halves, and they feed each other. One you already know about — the AI agrees with you. The other gets less attention — you agree with the AI.
+
+Start with the familiar half. Models are trained on human feedback, and humans reward agreement: we rate the confident, pleasant, on-our-side answer above the one that tells us we're wrong. So that's what the training selects for. Nobody opens a chat wanting to hear their idea is mediocre. We want something smart, fast, and on our side, and the labs tuned for exactly that. Anthropic [documented the result in a 2023 paper](https://arxiv.org/abs/2310.13548). When OpenAI [pushed a GPT-4o update that tipped into open flattery in early 2025](https://openai.com/index/sycophancy-in-gpt-4o/), they pulled it within days — but the only thing wrong was the dose. The dial points toward agreement by design.
+
+The other half is the one I keep catching in myself: we're just as agreeable back. You ask for options and take the one it recommends. A strategy comes back and you anchor on the first version it offers. Give it something to write and you end up editing its draft instead of starting from your own. This isn't only my experience — [recommender-system research](https://pubsonline.informs.org/doi/10.1287/isre.2013.0497) shows the first option a system presents pulls your own judgment toward it, and a [controlled writing study](https://www.science.org/doi/10.1126/sciadv.adw5578) found people who drafted alongside a biased AI shifted their real opinions toward it — even after being warned it was biased. Automation bias is the older name for the reflex: we defer to the answer because the machine gave it.
+
+What decides whether you catch it is whether you know the subject. Ask about something you understand deeply and the cracks show at once — the invented detail, the confident-but-thin claim, the bland average-of-the-internet answer an expert reads as filler. Ask about something you don't know well, and those same cracks pass for insight. A fluent, organized, plausible response looks like expertise when you have nothing to check it against, so you nod along. The less you know, the more agreeable you get — which is exactly backwards.
+
+Put the two halves together and you get the loop.
 
 ## How it works
 
@@ -14,10 +22,6 @@ I want to name a pattern in AI-assisted work: the agreement loop.
 Round and round, fast and frictionless. I see it everywhere: feature ideas, blog posts, strategy decks, travel plans, anywhere the "right answer" isn't obvious.
 
 The work feels productive in the moment. The work goes entirely uncontested, too. By the time it's "finished," you have a polished version of whatever you came in with. I've been self high-fiving with the AI the whole way through.
-
-Part of this is sycophancy on the AI side: models trained on human ratings learn to lean toward agreement, since humans rate agreeable responses higher. Anthropic [documented it in a 2023 paper](https://arxiv.org/abs/2310.13548). OpenAI [shipped an over-sycophantic GPT-4o update last spring and rolled it back days later](https://openai.com/index/sycophancy-in-gpt-4o/), after their own Model Behavior team had flagged it pre-launch. The labs know where the dial is set.
-
-But sycophancy is only half of the loop. The other half is yours: you ask for options, take the recommended one, anchor on whatever's offered first, stop generating alternatives of your own. Each turn reinforces both halves, and they produce the loop together.
 
 The loop does its worst damage in judgement-heavy work. For code, translation, factual recall, fast and agreeable is usually right. The catch appears where no clean ground truth exists: whether to build a feature, how to frame an argument, what the strongest counter is. These are exactly the tasks where you most need challenge, and exactly where the loop is most seductive.
 
