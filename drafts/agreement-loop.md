@@ -1,10 +1,12 @@
-# The AI Agreement Loop
+# Think With Me Not For Me
 
 I want to name a pattern in AI-assisted work: the agreement loop. It has two halves, and they feed each other. One you already know about — the AI agrees with you. The other gets less attention — you agree with the AI.
 
 Start with the familiar half. Models are trained on human feedback, and humans reward agreement: we rate the confident, pleasant, on-our-side answer above the one that tells us we're wrong. So that's what the training selects for. Nobody opens a chat wanting to hear their idea is mediocre. We want something smart, fast, and on our side, and the labs tuned for exactly that. Anthropic [documented the result in a 2023 paper](https://arxiv.org/abs/2310.13548). When OpenAI [pushed a GPT-4o update that tipped into open flattery in early 2025](https://openai.com/index/sycophancy-in-gpt-4o/), they pulled it within days — but the only thing wrong was the dose. The dial points toward agreement by design.
 
 The other half is the one I keep catching in myself: we're just as agreeable back. You ask for options and take the one it recommends. A strategy comes back and you anchor on the first version it offers. Give it something to write and you end up editing its draft instead of starting from your own. This isn't only my experience — [recommender-system research](https://pubsonline.informs.org/doi/10.1287/isre.2013.0497) shows the first option a system presents pulls your own judgment toward it, and a [controlled writing study](https://www.science.org/doi/10.1126/sciadv.adw5578) found people who drafted alongside a biased AI shifted their real opinions toward it — even after being warned it was biased. Automation bias is the older name for the reflex: we defer to the answer because the machine gave it.
+
+Part of what makes the human half so sticky is personalization. Before AI, generic content was obviously generic — a travel article, a strategy framework, a list of product ideas. You could feel the distance between it and your specific situation. Now the same content comes back tailored to your question, your context, your words. It reads like it was written for you, which makes it much harder to notice when it isn't actually right for you.
 
 What decides whether you catch it is whether you know the subject. Ask about something you understand deeply and the cracks show at once — the invented detail, the confident-but-thin claim, the bland average-of-the-internet answer an expert reads as filler. Ask about something you don't know well, and those same cracks pass for insight. A fluent, organized, plausible response looks like expertise when you have nothing to check it against, so you nod along. The less you know, the more agreeable you get — which is exactly backwards.
 
@@ -25,47 +27,20 @@ The work feels productive in the moment. The work goes entirely uncontested, too
 
 The loop does its worst damage in judgement-heavy work. For code, translation, factual recall, fast and agreeable is usually right. The catch appears where no clean ground truth exists: whether to build a feature, how to frame an argument, what the strongest counter is. These are exactly the tasks where you most need challenge, and exactly where the loop is most seductive.
 
+The quality problem compounds it. The AI presents its ideas more articulately than you'd state yours — organized, confident, complete-sounding. That fluency makes them feel better than they are. But articulate isn't the same as right, or novel, or suited to your specific situation. The AI gravitates toward the mean: the most defensible answer, the most common approach, the average of what it's seen. The genuinely surprising idea, the counterintuitive call, the thing that's right for your business but wrong for most — those are harder to surface, and easy to miss when the plausible-sounding version is already sitting in front of you.
+
 [Andrej Karpathy posted earlier this year](https://x.com/karpathy/status/2037921699824607591) that he'd spent four hours using an LLM to refine an argument and come away convinced. Then he asked the same model to argue the opposite, and it demolished his original position. The model agrees just as well whether your direction is right or not.
 
 The issue isn't whether the loop makes your work worse. It might not. AI-assisted work is probably better than working alone — you get more iterations, more angles, more refinement in less time. The problem is that AI agreement mimics the feeling of external feedback, and it isn't. Your audience isn't the model. At some point the work has to meet the people it's actually for, and every hour you spend building further in the loop is an hour before that happens. It's the same trap as over-building before your first customer test: you can go very deep, feel like you're iterating, and still be working entirely from your own assumptions. The agreement loop doesn't make you wrong. It keeps you insulated longer than you'd otherwise stay.
 
+And it doesn't have to live with the consequences. You do.
+
 ## What to do
 
-Two halves means two fixes.
+The lever you control most directly is how you configure the AI. Almost every modern tool lets you set persistent instructions — at a global level that applies to everything, and at a project level for specific work. For strategy, product thinking, writing — anywhere judgement is load-bearing — tell it to push back, name unstated assumptions, challenge your framing. For tasks where you just need an answer, that same instruction gets irritating fast.
 
-**The AI half: configure the model to push back.** Almost every modern AI tool lets you set persistent rules that load into every session, with project-level instructions on top of the global ones.
+I learned this the hard way. I'd set Claude to push back hard on everything. For product work it was exactly what I wanted — it challenged my thinking, asked why, pointed out what I was assuming. Then I was planning a trip and asking for hotel recommendations, and it started interrogating my criteria and telling me I was contradicting myself. I didn't want a sparring partner for hotel selection. I just wanted a list. The right move is to set your default for the work you do most, and use project-level instructions to switch modes when the task calls for it.
 
-|Tool         |Global / always-on                              |Project-specific                       |
-|-------------|------------------------------------------------|---------------------------------------|
-|Claude (chat)|Settings → Profile → Preferences                |Project instructions panel             |
-|Claude Cowork|Settings → Cowork → Global instructions         |Project's right-side Instructions panel|
-|Claude Code  |`~/.claude/CLAUDE.md`                           |`./CLAUDE.md` at the project root      |
-|ChatGPT      |Settings → Personalization → Custom Instructions|Project instructions (inside a Project)|
-|Codex (CLI)  |`~/.codex/AGENTS.md`                            |`./AGENTS.md` at the repo root         |
-|Cursor       |Settings → Rules → User Rules                   |`.cursor/rules/*.mdc` in the project   |
+The deeper fix is awareness. The loop works because it's invisible — it feels like productive collaboration right up until you surface and realise nothing has been contested. Notice when work feels too easy. Check whether you've been told no. Before you commit to a direction, try to state the strongest case against it yourself. If you can't, you've been in the loop.
 
-Tell it to push back, to name unstated assumptions, to vary its mode. Tell it not to open with agreement, not to summarise your idea and add three considerations.
-
-Here's the instruction I use:
-
-> [PASTE YOUR PROFILE PREFERENCE HERE]
-
-The difference is visible. Without the instruction, the model asks two multiple-choice questions and drafts the whole piece. With it, the model pushes back, tells me the topic is heavily written about, asks me to explain my thinking. The second response is more useful, and it feels slightly worse, in the way a conversation with a sharp colleague feels slightly worse than one with someone who flatters you. That worse feeling is what you want.
-
-**Your half: notice the loop and break it.**
-
-Three signals you're in one:
-
-1. **It feels too easy.** Real thinking has friction. Smooth work isn't always good work.
-1. **You haven't been told no.** Scroll back. If the AI hasn't pushed back hard or suggested you reconsider, you've been mirrored.
-1. **You can't state the strongest counter.** Thirty seconds with that question is the cheapest diagnostic you have.
-
-Five moves that work:
-
-1. **Argue the opposite.** Ask the AI to make the strongest case against your direction. It'll usually demolish parts of what you built. The AI isn't wrong — it just won't disagree until you ask.
-1. **Generate options before asking for them.** Write three of your own first. Otherwise the AI's first option becomes your anchor.
-1. **Use a separate agent as critic.** Fresh conversation, no shared history. Give it the work and the context, frame it as an adversary, ask for failure modes and the strongest objections. [Link to your earlier writing on this.]
-1. **Take it to a human.** A colleague, a peer, anyone who'll push. People have no structural incentive to agree with you.
-1. **Stop and write.** Close the chat. Write what you actually think, in your own words. Then go back if you still need to.
-
-The faster these tools get, the more valuable it becomes to think slowly. The speed is real and I'm not giving it up. But the friction that used to come free — working with people who push back — is gone. If you want the speed without slipping into an agreement loop, you have to add the friction back.
+The last thing — and maybe the most important — is not to doubt yourself out of it. The AI's ideas will often sound better than yours because they're more articulate. That's not the same as being better. Your instincts, your experience, your specific knowledge of your situation — those don't show up in the AI's answer. Use it to develop your thinking, not replace it. Think with it. Not for you.
