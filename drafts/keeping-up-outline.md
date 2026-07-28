@@ -70,7 +70,7 @@ The pivot. Give it its own short paragraph so the reader feels the floor move.
 This is where the post earns its keep. It's not vibes, it's a known dynamic with a name.
 
 - **Sutton's bitter lesson**: general methods that scale with compute beat hand-crafted human knowledge. Seventy years of it. Reliably.
-- The Claude Code team reportedly built on exactly this principle: bet on the model, not the scaffolding. Scaffolding buys 10–20%, and the next model generation wipes it out.
+- The sharpest formulation, from Hugo Bowne-Anderson: every piece of scaffolding **encodes an assumption about what the model can't do**. When the model learns to do it, that piece becomes *load-bearing for nothing* — and should come out. Anthropic reportedly strips capability out of Claude Code's own harness as models improve.
 - Your skills *were* scaffolding. Your plan-mode habit was scaffolding. This wasn't bad judgement — it was the correct move at the time, with a built-in expiry date nobody printed on the box.
 - The distinction that does the real work (steal this framing, it's the best thing in the reference material):
   - work that **compensates for a model weakness** → short shelf life
@@ -187,21 +187,44 @@ Ranked by how much I'd fight to keep them:
 
 ## Reference material
 
+> **Fetch caveat:** this session's egress policy blocks direct page fetches (everything 403s at the proxy), so the bullets below are assembled from search results, not from reading the pages. Treat them as accurate on substance and unreliable on exact wording. Read anything you intend to quote.
+
 **Strong — use these:**
 
-- [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — Anthropic, primary source. Good for the prompt → context engineering shift.
+- [Forget Agent Skills](https://hugobowne.substack.com/p/forget-agent-skills) — Hugo Bowne-Anderson. **The closest thing to your post that already exists — read this first.**
+  - Agents grew by bolting on scaffolding: planning systems, retrieval, memory layers, reflection loops, tool orchestration, multi-agent workflows. Frontier models are now absorbing those capabilities directly.
+  - Explicitly tells you to forget agent skills, subagents, ralph loops, and whatever else is trending — i.e. the exact anxiety in your section 7.
+  - Reports that top builders are more focused on **verification, memory, review, personal software and workflow design** than on swarms or autonomous loops. That's a direct, citable answer to your "am I missing something?" question — and the answer is *not* "you should be doing loops."
+- [What do you build when the models keep changing?](https://hugobowne.substack.com/p/are-better-models-making-agent-engineering) — same author, and the title is your post's question. Unread, but worth checking before you write, if only to make sure you're not restating it.
+- [AI Agent Harness, 3 Principles for Context Engineering, and the Bitter Lesson Revisited](https://hugobowne.substack.com/p/ai-agent-harness-3-principles-for)
+  - **The line to steal:** every component in a harness encodes an assumption about what the model *can't* do on its own. When the model gets better at that thing, the component becomes **"load-bearing for nothing"** and should come out. That's your entire thesis in one phrase, and it's a better formulation than the one in this outline.
+  - Reported that Anthropic strips capability out of Claude Code's own harness as models improve. If you can verify it, it's the strongest single fact in your post: the people building the tool delete their own scaffolding on purpose.
+  - Three-part context playbook — **Reduce** (shrink what's passed to the model), **Offload** (move state out of the prompt, into files and atomic tools), **Isolate** (delegate to sub-agents).
+  - ⚠️ I earlier attributed a "scaffolding buys 10–20%" figure to this piece; it doesn't appear in anything I can verify. **Don't publish that number.** I've cut it from section 4.
+- [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — Anthropic, primary source.
+  - Core principle: find the **smallest set of high-signal tokens** that gets the outcome you want. Context is a finite resource with diminishing returns, not a bucket to fill.
+  - Frames context engineering as the successor to prompt engineering — managing everything the model sees at each step, not crafting one instruction.
+  - Techniques: compaction, structured note-taking, multi-agent architectures. Sub-agents burn tens of thousands of tokens exploring and hand back a 1,000–2,000 token summary, keeping the mess out of the lead agent's context.
+  - **Why it matters to your argument:** "smallest set of high-signal tokens" is an argument *for pruning*. Your instinct to delete skills isn't housekeeping, it's the recommended practice.
 - [Measuring AI Ability to Complete Long Software Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) — METR, the ~7-month doubling finding. **I couldn't fetch this (403), so the doubling numbers and the claimed acceleration to ~4 months are unverified. Check the primary source before you publish a number.**
 - [A new Moore's Law for AI agents](https://theaidigest.org/time-horizons) — AI Digest's tracker of the same data, usually more current. Also 403'd for me; worth a look in a browser.
-- [Simon Willison's AI writing](https://simonwillison.net/tags/ai/) — the standing example of synthesis over firehose. His periodic six-month recaps are the model for "keeping up on a fixed budget."
-- [The AI Coding Paradigm Shift with Simon Willison](https://www.heavybit.com/library/podcasts/high-leverage/ep-9-the-ai-coding-paradigm-shift-with-simon-willison) — usable for a quote on pace.
+- [Simon Willison's AI writing](https://simonwillison.net/tags/ai/) — the standing example of synthesis over firehose; his periodic recaps are the model for "keeping up on a fixed budget." Also [his highlights from Lenny's Podcast](https://simonw.substack.com/p/highlights-from-my-conversation-about) and [the full episode](https://www.lennysnewsletter.com/p/an-ai-state-of-the-union).
+  - Dates the inflection to **November 2025** (GPT-5.1, Opus 4.5): coding agents went from "mostly work but need watching" to "do what you tell them almost all of the time." That's a citable anchor for your section 2 — better than a vague "this year."
+  - Writes ~95% of his code from his phone now, and is mentally exhausted by 11am. **Use this.** It's the same complaint as yours from the other end of the expertise range: the constraint stopped being skill and became judgement and attention. A career engineer is tired for the same reason you are.
+  - The "dark factory" pattern — nobody writes or reviews the code, AI does its own QA — is where your section 7 is heading, and he's sceptical rather than triumphant about it.
+  - Coined "prompt injection" and "AI slop"; treats prompt injection as still-unsolved. Useful counterweight if you want one line acknowledging that not everything is getting better.
 - [Andrej Karpathy](https://x.com/karpathy/status/2037921699824607591) — you already cite him; his context-engineering framing is the origin of that vocabulary shift.
 
 **Useful for the bitter lesson section:**
 
-- [AI Agent Harness, 3 Principles for Context Engineering, and the Bitter Lesson Revisited](https://hugobowne.substack.com/p/ai-agent-harness-3-principles-for) — where the "Claude Code team bet on the model, not scaffolding" claim comes from, plus the 10–20% figure. Secondary source; attribute it as reported, or find the primary talk.
-- [The Bitter Lesson of Agentic Coding](https://agent-hypervisor.ai/posts/bitter-lesson-of-agentic-coding/)
-- [AI Founder's Bitter Lesson](https://lukaspetersson.com/blog/2025/bitter-vertical/) — "architectural assumptions baked in today are obsolete in six months." Written for founders, transfers cleanly to personal workflow.
-- Sutton's original *The Bitter Lesson* essay — cite the source, it's one page and it's the anchor for the whole section.
+- [AI Founder's Bitter Lesson](https://lukaspetersson.com/blog/2025/bitter-vertical/) — Lukas Petersson, four chapters. Written for founders, transfers cleanly to personal workflow.
+  - Ch.1: systems that leverage domain knowledge get overtaken by systems that leverage compute — the historical pattern, repeatedly.
+  - Ch.1's two conditions are the useful bit, because they tell you **when** scaffolding survives: where the solution path is unclear, more autonomy wins; where the input space is large and complex, *less* specific products win. Invert it and you get the case for keeping a skill — narrow, well-defined, stable input.
+  - Ch.2 ("No Power"): constrained vertical products lack the strategic position to hold ground once the general option is good enough.
+  - Ch.3: predicts very few verticals where specialised products still thrive by 2027.
+  - "Architectural assumptions baked in today are obsolete in six months" — the quotable line.
+- Sutton's original *The Bitter Lesson* essay — one page, the anchor for the whole section. Cite the source, not the summarisers.
+- [The Bitter Lesson of Agentic Coding](https://agent-hypervisor.ai/posts/bitter-lesson-of-agentic-coding/) — unverified, lower priority.
 
 **Vocabulary treadmill (section 7):**
 
