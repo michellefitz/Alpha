@@ -116,6 +116,9 @@ Short section, sharp point.
 
 - The vocabulary treadmill is real and worth naming plainly: prompt engineering → context engineering → harness engineering → loop engineering. Each one gets announced as the thing you should have been doing all along.
 - **The trap to name explicitly:** chasing each new layer is the same mistake as building the last pile, just with newer nouns. The bitter lesson will eat loops too.
+- **And you can stop worrying about loops specifically.** Two verified findings let you close this section with an answer instead of a shrug:
+  - Bowne-Anderson and Wiecki spent ~10 hours interviewing 16 builders they trust about what they actually use day to day. The recurring answers were **verification, memory, review, personal software and workflow design** — "much less swarms, autonomous loops, or agent frameworks."
+  - Lance Martin's criterion for when full autonomy actually works: **high supervision, rapid feedback loops, and low risk.** If your work doesn't meet those three, loops aren't the frontier you're missing — they're the wrong tool.
 
 ### 8. What to do
 
@@ -129,6 +132,17 @@ The only reliable test, and it's empirical because it has to be — nobody publi
 - Same output? It was thin. It's gone. Notice how good that feels.
 - Worse output? It's earning its place. Keep it, and re-test it after the next model release.
 - Run it as a ritual on a schedule, not when you feel guilty. Every model release, pick three things and re-test them.
+
+**Question one-and-a-half: does your setup get better when the model does?** *(verified addition — Lance Martin's future-proofing test)*
+
+This is the closest thing to a real answer to "how do I know if I'm stale," and it's a proper test rather than a vibe:
+
+> Test your system against models of varying capabilities. If performance scales up with more powerful models, your harness is likely well-designed and not a bottleneck.
+
+- Run the same task on a weaker model and a stronger one, through your setup.
+- Output improves with the better model → your setup is riding the wave. Leave it alone.
+- Output barely moves → **your scaffolding is the ceiling, not the model.** That's staleness with a symptom, which is exactly what you said you were missing.
+- This deserves to be prominent. Section 5 is you saying "there's no signal." This is a signal.
 
 **Question two: is this a workaround, or is it mine?**
 
@@ -187,27 +201,40 @@ Ranked by how much I'd fight to keep them:
 
 ## Reference material
 
-> **Fetch caveat:** this session's egress policy blocks direct page fetches (everything 403s at the proxy), so the bullets below are assembled from search results, not from reading the pages. Treat them as accurate on substance and unreliable on exact wording. Read anything you intend to quote.
+> **Status: verified.** These pages have now been read directly. Quotes marked ✅ are verbatim from the source. Three things I told you earlier were wrong and are corrected below.
 
 **Strong — use these:**
 
-- [Forget Agent Skills](https://hugobowne.substack.com/p/forget-agent-skills) — Hugo Bowne-Anderson. **The closest thing to your post that already exists — read this first.**
-  - Agents grew by bolting on scaffolding: planning systems, retrieval, memory layers, reflection loops, tool orchestration, multi-agent workflows. Frontier models are now absorbing those capabilities directly.
-  - Explicitly tells you to forget agent skills, subagents, ralph loops, and whatever else is trending — i.e. the exact anxiety in your section 7.
-  - Reports that top builders are more focused on **verification, memory, review, personal software and workflow design** than on swarms or autonomous loops. That's a direct, citable answer to your "am I missing something?" question — and the answer is *not* "you should be doing loops."
-- [What do you build when the models keep changing?](https://hugobowne.substack.com/p/are-better-models-making-agent-engineering) — same author, and the title is your post's question. Unread, but worth checking before you write, if only to make sure you're not restating it.
-- [AI Agent Harness, 3 Principles for Context Engineering, and the Bitter Lesson Revisited](https://hugobowne.substack.com/p/ai-agent-harness-3-principles-for)
-  - **The line to steal:** every component in a harness encodes an assumption about what the model *can't* do on its own. When the model gets better at that thing, the component becomes **"load-bearing for nothing"** and should come out. That's your entire thesis in one phrase, and it's a better formulation than the one in this outline.
-  - Reported that Anthropic strips capability out of Claude Code's own harness as models improve. If you can verify it, it's the strongest single fact in your post: the people building the tool delete their own scaffolding on purpose.
-  - Three-part context playbook — **Reduce** (shrink what's passed to the model), **Offload** (move state out of the prompt, into files and atomic tools), **Isolate** (delegate to sub-agents).
-  - ⚠️ I earlier attributed a "scaffolding buys 10–20%" figure to this piece; it doesn't appear in anything I can verify. **Don't publish that number.** I've cut it from section 4.
+- [AI Agent Harness, 3 Principles for Context Engineering, and the Bitter Lesson Revisited](https://hugobowne.substack.com/p/ai-agent-harness-3-principles-for) — **the best source for this post.** Hugo Bowne-Anderson and Duncan Gilchrist, 12 Dec 2025, writing up a High Signal podcast episode with **Lance Martin** (LangChain). ⚠️ Attribute the ideas to **Lance Martin**, not Bowne-Anderson. Subtitle: *"Be ready to rebuild or perish."*
+  - ✅ "Over time models get better and you're having to strip away structure, remove assumptions and make your harness or your system simpler and adapt to the models." — Martin. **This is your thesis, said by an expert, and it's the quote to build section 4 around.**
+  - ✅ "As models improve, this harness must be continually simplified, stripping away crutches that are no longer needed."
+  - ✅ "the architectural assumptions baked into an application today will likely be obsolete in six months when a new, more capable model is released"
+  - ✅ "Even Anthropic rips out Claude Code's agent harness as models improve!" — **verified.** The people who build the tool delete their own scaffolding on purpose.
+  - ✅ **"The popular agent Manus has been re-architected five times since March 2024."** The single most useful fact I found. Five rebuilds in under two years, by a serious team. Your "I have to rebuild again?!" isn't a personal failing — it's the professional baseline.
+  - ✅ "Don't Fear Rebuilding: The cost and time required to rebuild systems are dramatically lower now, thanks to powerful code-generation models." — direct answer to challenge #5.
+  - ✅ "Be Wary of Premature Training: Frontier models often quickly acquire the capabilities that teams spend months building into custom models." — your skills story, at company scale.
+  - ✅ The future-proofing test (now in section 8): "Test your system against models of varying capabilities. If performance scales up with more powerful models, your harness is likely well-designed and not a bottleneck."
+  - ✅ "Full-blown agentic systems thrive when there's high supervision, rapid feedback loops, and low risk."
+  - Reduce / Offload / Isolate, confirmed. Also "context rot": effective context windows are meaningfully smaller than the advertised number.
+  - ⚠️ **Correction:** the phrase "load-bearing for nothing" that I told you to steal **does not appear in this piece.** It was a search-engine paraphrase and I passed it on without checking. Don't quote it. The Martin quotes above are better anyway and they're real.
+  - ⚠️ **Correction:** the "scaffolding buys 10–20%" figure isn't there either. Already cut.
+- [Forget Agent Skills](https://hugobowne.substack.com/p/forget-agent-skills) — ⚠️ **Correction: I oversold this.** It's a Vanishing Gradients newsletter round-up promoting events and podcasts, not an essay arguing a thesis. Don't "read it first." It does contain one genuinely valuable, citable finding:
+  - ✅ Bowne-Anderson and Thomas Wiecki spent "roughly 10 hours talking with 16 Python, data, ML, and AI builders we trust about what they're actually using, what works, and what doesn't."
+  - ✅ "The builders we trust keep coming back to verification, memory, review, personal software, and workflow design. Much less swarms, autonomous loops, or agent frameworks."
+  - ✅ "AI agents exploded by adding more scaffolding around models: planning systems, retrieval pipelines, memory layers, reflection loops, tool orchestration, multi-agent workflows. But frontier models are starting to absorb many of those capabilities directly. A lot of today's 'best practices' for building agents may already be temporary."
+  - ✅ "why newer models often break older harnesses" — precise phrasing for your section 3.
+  - Adjacent signals worth a look: an event titled "Coding Agents Are Dead," an episode called "From Skills to Agent Harnesses," and Hamel Husain on record for "skill scepticism." You are not the only person who concluded their skills were thin.
 - [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — Anthropic, primary source.
   - Core principle: find the **smallest set of high-signal tokens** that gets the outcome you want. Context is a finite resource with diminishing returns, not a bucket to fill.
   - Frames context engineering as the successor to prompt engineering — managing everything the model sees at each step, not crafting one instruction.
   - Techniques: compaction, structured note-taking, multi-agent architectures. Sub-agents burn tens of thousands of tokens exploring and hand back a 1,000–2,000 token summary, keeping the mess out of the lead agent's context.
   - **Why it matters to your argument:** "smallest set of high-signal tokens" is an argument *for pruning*. Your instinct to delete skills isn't housekeeping, it's the recommended practice.
-- [Measuring AI Ability to Complete Long Software Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) — METR, the ~7-month doubling finding. **I couldn't fetch this (403), so the doubling numbers and the claimed acceleration to ~4 months are unverified. Check the primary source before you publish a number.**
-- [A new Moore's Law for AI agents](https://theaidigest.org/time-horizons) — AI Digest's tracker of the same data, usually more current. Also 403'd for me; worth a look in a browser.
+- **METR — and this one is a gift, so read the whole entry.**
+  - The famous [March 2025 post](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) is where "task lengths double every 7 months" comes from. It now carries a warning banner from METR themselves: ✅ *"Some of the text and figures in this post are out of date… some claims in the text (e.g. the doubling time) reflect the state of the data at the time of original publication."*
+  - **🎁 This is the anecdote your post has been missing.** The single most-cited source on how fast AI is moving *went out of date*, and its authors had to staple a notice to the front of it. Your whole thesis, demonstrated by the citation you'd have used to prove it. Put it in section 5. It's better than anything I'd have written for you.
+  - Cite [metr.org/time-horizons](https://metr.org/time-horizons) instead — their maintained page, last updated **8 May 2026**, methodology **Time Horizon 1.1**. Numbers live in an interactive chart, so read them off the page yourself rather than taking a figure from me.
+  - ⚠️ **Do not publish "doubling every 4 months."** That came from a search snippet and I could not verify it anywhere in METR's own material.
+  - ⚠️ **The stat is very widely misreported, and you should avoid the trap** (or better, name it): METR are explicit that the 50% time horizon is a measure of **task difficulty**, not how long an agent can run autonomously. ✅ Their own FAQ: *"Does 'time horizon' mean the length of time that current AI agents can act autonomously? No."* Also worth knowing: the tasks are self-contained and well-specified, so a "2-hour task" is what **a new hire with no prior context** could do in two hours, not an experienced person on a familiar codebase. ✅ Measurements above 16 hours are unreliable with their current task suite.
 - [Simon Willison's AI writing](https://simonwillison.net/tags/ai/) — the standing example of synthesis over firehose; his periodic recaps are the model for "keeping up on a fixed budget." Also [his highlights from Lenny's Podcast](https://simonw.substack.com/p/highlights-from-my-conversation-about) and [the full episode](https://www.lennysnewsletter.com/p/an-ai-state-of-the-union).
   - Dates the inflection to **November 2025** (GPT-5.1, Opus 4.5): coding agents went from "mostly work but need watching" to "do what you tell them almost all of the time." That's a citable anchor for your section 2 — better than a vague "this year."
   - Writes ~95% of his code from his phone now, and is mentally exhausted by 11am. **Use this.** It's the same complaint as yours from the other end of the expertise range: the constraint stopped being skill and became judgement and attention. A career engineer is tired for the same reason you are.
