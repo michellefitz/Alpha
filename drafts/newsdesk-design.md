@@ -1,4 +1,4 @@
-# Design notes: a system for keeping up with a topic
+# Newsdesk — design notes
 
 ## What this is
 
@@ -66,6 +66,34 @@ thirteen and fourteen. That's the design: a spine you keep adding to.
 - **11.** It's running unattended and you have no way to tell a good edition
   from a bad one.
 - **12.** Someone asks how you did it.
+
+## What the vocabulary actually refers to
+
+Three terms are circulating that describe different layers of the same system.
+They compose; none replaces another. Newsdesk gives each one a concrete
+referent, which is most of the value of building it.
+
+| Term | What it means | Where it is in Newsdesk |
+| --- | --- | --- |
+| Context engineering | Controlling what a single model sees — instructions, retrieved material, memory, window budget | Step 1 (the brief) and step 3 (the archive). Also why step 4 exists: separate researchers keep forty sources out of one window |
+| Loop engineering | Making one agent's repeated iteration reliable — retries, checks, stopping conditions | Step 6 (verify, drop what fails) and step 8 (`/loop` and scheduled runs) |
+| Graph engineering | The topology: which nodes exist, which transitions are allowed, where work fans out and converges | Step 7 (the workflow). It is the only step that's really about this |
+
+So: is Newsdesk graph engineering? Step 7 is. The workflow script fans out to
+parallel researchers, joins their results at a verification node, passes the
+survivors to a synthesis node, then hands off to deterministic nodes (the hooks
+in step 9) and a human checkpoint (approving sources in setup). Written down as
+a script you can read, which is the whole idea.
+
+Two honest caveats worth keeping:
+
+- **Newsdesk's graph is a simple one.** Fan out, converge, synthesise. No
+  conditional routing, no cycles, no exception paths. It's the shallow end of
+  what the term covers, and calling it a full example would be overselling.
+- **The term is newer than the practice.** It surfaced around July 2026, mostly
+  through blog posts, describing something orchestration frameworks have done
+  for years. New vocabulary for existing work is worth noticing as a pattern,
+  because it will happen again with the next three terms.
 
 ## Step 5, in more detail
 
@@ -135,9 +163,14 @@ the other side with a working system and an understanding of how it works.
 
 How it behaves:
 
-- **Interviews first.** What's your topic? What do you already know? Where do
-  you currently read about it? What do you never want to see again? How often do
-  you want this?
+- **Interviews first.** What's your topic? What do you already know? Which
+  podcasts, newsletters and sites do you already read? What do you never want to
+  see again? How often do you want this?
+- **Proposes sources, doesn't impose them.** It takes the handful of places you
+  named, goes and finds related ones, and brings back a list for you to approve
+  or reject one by one. You'll have views on which sources you trust that it
+  can't guess. The rejected ones are worth keeping too — a standing "not this"
+  list is part of the brief.
 - **Builds one step at a time.** It doesn't generate twelve things at once. It
   builds step one, explains in a few plain sentences what a `CLAUDE.md` is and
   why this needs one, and has you run it. Then it offers step two.
