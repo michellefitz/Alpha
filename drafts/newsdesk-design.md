@@ -20,7 +20,7 @@ Two things get built:
 The second one is the deliverable. It's a teaching tool that happens to leave
 you with something useful.
 
-## The twelve steps
+## The fourteen steps
 
 Each step adds one capability. Each step exists because the previous version
 had a specific problem. Every step is usable on its own — stop at step four and
@@ -31,18 +31,23 @@ you still have something good.
 | 1 | The brief | A `CLAUDE.md` with your topic, what you already know, what to skip | Persistent context |
 | 2 | The command | A skill that runs the digest the same way every time | Skills |
 | 3 | The archive | Editions saved to files; each run reads the last ones first | State and memory |
-| 4 | The researchers | Several subagents running at once, one per source type | Subagents, context isolation, model choice |
+| 4 | The researchers | Several subagents running at once, one per source type | Subagents, context isolation |
 | 5 | The viewpoints | A subagent briefed to find disagreement, not consensus | How an agent's job is defined |
 | 6 | The check | A second pass that tries to knock down each claim | Verification |
 | 7 | The workflow | The whole process written as a script you can rerun | Dynamic workflows |
-| 8 | The schedule | It runs without you and leaves you a published page | Routines, desktop tasks, `/loop` |
-| 9 | The automatic checks | Dead links, duplicates, index updates — every run, no exceptions | Hooks |
-| 10 | Real sources, real delivery | Connectors that read from where your topic lives and send the edition to your inbox | MCP and tools |
-| 11 | The standard | A check on whether the digest is any good | Evals |
-| 12 | Hand it on (optional) | Package it so someone else can run all twelve | Plugins and marketplaces |
+| 8 | The branches | Stories routed by type; loops that dig; a plan for when a source fails | Conditional routing, cycles, exception paths |
+| 9 | The schedule | It runs without you and leaves you a published page | Routines, desktop tasks, `/loop`, autonomy levels |
+| 10 | The models | A different model and effort level per stage, and an advisor for the hard calls | Model selection, effort, cost |
+| 11 | The automatic checks | Dead links, duplicates, index updates — every run, no exceptions | Hooks |
+| 12 | Real sources, real delivery | Connectors that read from where your topic lives and send the edition to your inbox | MCP and tools |
+| 13 | The standard | A check on whether the digest is any good | Evals |
+| 14 | Hand it on (optional) | Package it so someone else can run all fourteen | Plugins and marketplaces |
 
-Twelve is what the list is today. As new capabilities ship, they become step
-thirteen and fourteen. That's the design: a spine you keep adding to.
+Fourteen is what the list is today. As new capabilities ship they become step
+fifteen and sixteen. That's the design: a spine you keep adding to.
+
+The post probably doesn't walk all fourteen at equal depth. Steps 1–9 are the
+system; 10–14 are what you do once it's running.
 
 ### Why each step happens
 
@@ -59,13 +64,18 @@ thirteen and fourteen. That's the design: a spine you keep adding to.
 - **6.** Some of what comes back is plausible and wrong.
 - **7.** You're deciding what to run each day, and doing it slightly
   differently each time.
-- **8.** You have to be awake and at your desk for any of it to happen.
-- **9.** It's producing daily now and nothing is checking the mechanical things.
-- **10.** Web search doesn't reach the forums, papers, and feeds where your
+- **8.** Every story gets treated identically — a research paper and a press
+  release go through the same reader — and a quiet Tuesday produces the same
+  padded five items as a huge one.
+- **9.** You have to be awake and at your desk for any of it to happen.
+- **10.** It's running every day now. Either it's costing more than it's worth,
+  or it's fast and cheap and the edition reads like it.
+- **11.** Nothing is checking the mechanical things.
+- **12.** Web search doesn't reach the forums, papers, and feeds where your
   topic actually lives.
-- **11.** It's running unattended and you have no way to tell a good edition
+- **13.** It's running unattended and you have no way to tell a good edition
   from a bad one.
-- **12.** Someone asks how you did it.
+- **14.** Someone asks how you did it.
 
 ## What the vocabulary actually refers to
 
@@ -77,23 +87,17 @@ referent, which is most of the value of building it.
 | --- | --- | --- |
 | Context engineering | Controlling what a single model sees — instructions, retrieved material, memory, window budget | Step 1 (the brief) and step 3 (the archive). Also why step 4 exists: separate researchers keep forty sources out of one window |
 | Loop engineering | Making one agent's repeated iteration reliable — retries, checks, stopping conditions | Step 6 (verify, drop what fails) and step 8 (`/loop` and scheduled runs) |
-| Graph engineering | The topology: which nodes exist, which transitions are allowed, where work fans out and converges | Step 7 (the workflow). It is the only step that's really about this |
+| Graph engineering | The topology: which nodes exist, which transitions are allowed, where work fans out and converges | Steps 7 and 8. Step 7 builds the straight-line version; step 8 adds the branches, loops and failure paths |
 
-So: is Newsdesk graph engineering? Step 7 is. The workflow script fans out to
-parallel researchers, joins their results at a verification node, passes the
-survivors to a synthesis node, then hands off to deterministic nodes (the hooks
-in step 9) and a human checkpoint (approving sources in setup). Written down as
-a script you can read, which is the whole idea.
+Step 7 fans out to parallel researchers, joins at a verification node, passes
+the survivors to synthesis, then hands off to deterministic nodes (the hooks in
+step 11) and a human checkpoint (approving sources in setup). Step 8 is where it
+stops being a straight line.
 
-Two honest caveats worth keeping:
-
-- **Newsdesk's graph is a simple one.** Fan out, converge, synthesise. No
-  conditional routing, no cycles, no exception paths. It's the shallow end of
-  what the term covers, and calling it a full example would be overselling.
-- **The term is newer than the practice.** It surfaced around July 2026, mostly
-  through blog posts, describing something orchestration frameworks have done
-  for years. New vocabulary for existing work is worth noticing as a pattern,
-  because it will happen again with the next three terms.
+One caveat worth keeping: **the term is newer than the practice.** It surfaced
+around July 2026, mostly through blog posts, describing something orchestration
+frameworks have done for years. New vocabulary for existing work is worth
+noticing as a pattern, because it will happen again with the next three terms.
 
 ## Step 5, in more detail
 
@@ -112,7 +116,70 @@ avoid.
 Risk: models are good at producing a symmetrical, hollow "on the other hand"
 paragraph. If that's what comes out, it's worth saying so in the post.
 
+## Step 8, in more detail
+
+This is where the process stops being a straight line. Three things, each with a
+reason the system already has.
+
+**Routing: not every story is the same kind of thing.** A router classifies what
+came in and sends it to the reader that suits it. A research paper needs someone
+who'll read the method and notice the sample size. A product launch needs
+someone who checks whether you can actually use it yet or whether it's a waitlist.
+A funding story needs the number checked against the last round. A rumour needs
+the chain traced back to whoever actually said it. You'd read these four things
+differently yourself, which is the argument for the machine doing it too.
+
+Routing only works if the researchers return structured findings rather than
+paragraphs — you can't branch on prose. That's a concept worth meeting here.
+
+**Routing: quiet days and big days.** If little happened, produce a short
+edition and say it was quiet. If something large happened, drop the usual shape
+and go deep on the one story. This is the direct fix for the failure mode where
+a daily format demands five items whether or not five things happened, and it's
+the most valuable branch in the system.
+
+**Cycles: keep pulling the thread.** A story cites a post citing a thread citing
+a paper. Loop until you reach the primary source or hit a depth limit. Same
+pattern for search: run another round, and stop when a round turns up nothing
+new. Both teach the thing that matters about loops, which is not how to start
+one but how to stop it.
+
+**Exception paths: things fail constantly.** A feed is down, a site is
+paywalled, an API is rate-limited, verification can't reach a source to check a
+claim. The wrong answer is a thinner edition that looks normal. The right answer
+is an edition that says which sources it couldn't reach, and marks a claim
+unverified rather than quietly dropping or asserting it.
+
+An unattended system that fails silently is worse than one that doesn't run,
+because you'll trust it. You won't notice this in a demo. You'll notice it in
+week one, which is the argument for running it a week before writing anything.
+
 ## Step 10, in more detail
+
+Most people meet a model picker and an effort setting with no idea what to do
+with either. Newsdesk answers it by having an obvious gradient inside one small
+system.
+
+| Stage | Work | Choice |
+| --- | --- | --- |
+| Fetching and skimming forty sources | High volume, low judgement | Cheapest fast model |
+| Classifying and routing | Bounded decision | Cheap model |
+| Verification | Careful but narrow | Mid |
+| Viewpoints and synthesis | The judgement work — the part you actually read | Strongest model, high effort |
+| "Is this genuinely a big deal or is it hype?" | A hard call worth a second opinion | The advisor |
+
+The lesson is that they work together on purpose: the great majority of the
+tokens go through a cheap model, and the small fraction that involves judgement
+goes through the best one. That's most of practical cost control, demonstrated
+in a system small enough to hold in your head.
+
+And you can feel it. Run synthesis on the fast model for a day and the edition
+is visibly worse — thinner, more generic, more confident. That's an eval you
+don't have to instrument. You just read it, the same way you know your own
+topic. Doing this deliberately for one edition is a better lesson than any
+explanation of effort levels.
+
+
 
 Tools go both directions, and the inbound direction is the more interesting one.
 
@@ -184,6 +251,22 @@ How it behaves:
 
 The tool needs to know it's a teaching tool. Getting the system built is the
 easy half; the reason it exists is what the person understands afterwards.
+
+## Two things folded into step 9
+
+Not big enough for their own steps, but they're where these concepts become
+real, and both are missing from most explanations.
+
+**How much rope to give it.** Permission modes, auto mode, sandboxing. The
+moment work runs unattended you have to decide what it's allowed to do without
+asking. Newsdesk is read-mostly, so it's the rare place you can turn this up and
+find out what happens with a blast radius of one bad summary. Most people never
+get to experiment with autonomy because the first place they meet it is
+somewhere that matters.
+
+**Seeing what it did.** Run transcripts, the workflow progress view, a log of
+what each run fetched and rejected. When you're in the loop you don't need this.
+The day it runs without you, an unreadable system is an untrustworthy one.
 
 ## Why a personal topic and not work
 
