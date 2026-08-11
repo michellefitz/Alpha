@@ -37,9 +37,9 @@ you still have something good.
 | 7 | The workflow | The whole process written as a script you can rerun | Dynamic workflows |
 | 8 | The schedule | It runs without you and leaves you a published page | Routines, desktop tasks, `/loop` |
 | 9 | The automatic checks | Dead links, duplicates, index updates — every run, no exceptions | Hooks |
-| 10 | Real sources | Connectors for the places your topic actually lives | MCP and tools |
+| 10 | Real sources, real delivery | Connectors that read from where your topic lives and send the edition to your inbox | MCP and tools |
 | 11 | The standard | A check on whether the digest is any good | Evals |
-| 12 | Hand it on | Package it so someone else can run all twelve | Plugins and marketplaces |
+| 12 | Hand it on (optional) | Package it so someone else can run all twelve | Plugins and marketplaces |
 
 Twelve is what the list is today. As new capabilities ship, they become step
 thirteen and fourteen. That's the design: a spine you keep adding to.
@@ -83,6 +83,40 @@ avoid.
 
 Risk: models are good at producing a symmetrical, hollow "on the other hand"
 paragraph. If that's what comes out, it's worth saying so in the post.
+
+## Step 10, in more detail
+
+Tools go both directions, and the inbound direction is the more interesting one.
+
+**An inbox as a source.** Set up a dedicated email address and subscribe it to
+the newsletters you already half-read and never get through. The system reads
+them for you. For AI news this is close to ideal — the best coverage of the
+topic arrives as newsletters, and everyone subscribed to six of them is already
+behind. Gardening has the same shape, so does most of what people follow.
+
+This also teaches the thing worth learning about tools: an agent with an inbox
+is reading text written by strangers, and that text can contain instructions. A
+dedicated address used only for subscriptions keeps that contained, and keeps
+your real mail out of it. It's a real decision with a real reason, made
+somewhere the stakes are a newsletter.
+
+**An inbox as delivery.** The edition arrives at 7am like any other newsletter,
+which is where you'd read it anyway. The published page is the archive; the
+email is the habit.
+
+**Finding the rest.** Which connectors matter is topic-dependent, so the setup
+tool searches for them at the time rather than shipping a fixed list. That way
+it keeps working as new servers appear.
+
+The pattern underneath is stable, though:
+
+- **Almost everyone wants** email, RSS feeds, Reddit, YouTube transcripts.
+- **Topic-specific** varies a lot: arXiv and GitHub releases for AI, weather and
+  frost dates for gardening, launch schedules for space, gig listings and label
+  feeds for music.
+
+Asking someone where they currently read about their topic gets you most of this
+list without them knowing what MCP is.
 
 ## What an edition contains
 
