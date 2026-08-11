@@ -216,8 +216,8 @@ const written = await agent(
    Read CLAUDE.md and the two most recent files in archive/.
    ${SHAPE[day]}
 
-   Write the edition to archive/ dated today, and append a line to
-   archive/index.md.
+   Write the edition to archive/ dated today. Do not touch archive/index.md —
+   it is rebuilt mechanically after you write (see scripts/update-index.sh).
 
    Rules that override everything: never include a refuted finding; mark
    unverified findings as unverified; never end a disagreement with a sentence
