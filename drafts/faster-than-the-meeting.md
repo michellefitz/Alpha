@@ -54,16 +54,40 @@ It just cost more than it was worth, most of the time, for most things.
 
 Now I can build the thing faster than I could get everyone into a room to decide whether to build it. Not "faster than we could build it before" — faster than we could hold the *meeting*.
 
-## Where the discipline goes
+## A different skill set
 
-None of this means build everything. That's the obvious bad reading, and it's wrong. Opportunity cost didn't disappear; it moved. It's no longer mainly your engineers' time. It's your attention, and — the moment anyone else is involved — theirs. A product stuffed with things that were cheap to make is not a good product. Ten mediocre features shipped before lunch is a worse outcome than one good one shipped in a fortnight.
+None of this means build everything. That's the obvious bad reading and it's wrong. Opportunity cost didn't disappear, it moved — off your engineers' time and onto your attention, and the moment anyone else is involved, theirs.
 
-What's actually changed is *when* the discipline happens.
+What changed is *when* the discipline happens. De-risking sat in front of the building because building was the expensive, irreversible part. You did the research so you wouldn't have to build the wrong thing. Now building it is very often the cheapest way to find out. The prototype costs less than the meeting about the prototype. A good half of what we used to answer with research is now answerable by making the thing and looking at it.
 
-De-risking used to sit entirely in front of the building, because building was the expensive, irreversible part. You did the research so you wouldn't have to build the wrong thing. Now, very often, building it *is* the cheapest way to find out. The prototype costs less than the meeting about the prototype. Half the questions we used to answer with research are now answerable by making the thing and looking at it.
+Which is the same problem I have with model releases, arriving from the other direction. I can't tell from the outside whether a tool is better for my work — I have to use it. I don't think I could ever tell from the outside whether a feature was worth having either. I just had a process that made it look like I could.
 
-Which is exactly the problem I have with model releases. I can't tell from the outside whether a tool is better for my work. I have to use it. And it turns out I can't tell from the outside whether a feature is worth having either — so I should stop pretending a round of prototype feedback was ever telling me that, and just build it.
+So the question stops being *can you get this built* and becomes *can you build a good product*. And I think that's where good product managers are about to separate from average ones, quite sharply.
 
-But that only works if the judgement arrives somewhere. If it doesn't happen before, it has to happen after: is this actually good, does it earn its place, should it stay. That question used to get whatever attention was left over once everyone had finished de-risking. It was always the hardest question and it always got the least time.
+The people who'll do well are the ones who can spot a customer problem that's genuinely valuable to solve. Who notice a new pattern forming, or a new way of solving something that wasn't available last year. That's a different skill from the one the job has been selecting for.
 
-It's now the only one that's still expensive. I'm not sure we're any better at it than we were.
+Because look at what the old set actually was: executing projects well, leading teams, navigating ambiguity, managing stakeholders, running the research studies, aggregating the feedback, keeping the whole thing moving. That was good work. It was genuinely what was needed. But a lot of it existed *because* de-risking existed — it was the machinery for spending engineering time safely. Take away the need to spend engineering time safely and a surprising amount of it is scaffolding around a building that's already up.
+
+I don't say that as a criticism of the people. The job rewarded it, so people got good at it. I got good at it.
+
+What I think a lot of us now have to do is stop and ask some genuinely uncomfortable questions. How tuned in am I, really, to what makes this product good? Do I understand the customer — not their persona, their actual world? Where does this thing sit in it? What job does it do for them? What do they find valuable, as opposed to what did well in a survey?
+
+That's back-to-basics product work, and it's been buried for years under mechanics. Frameworks, ceremonies, artefacts, all the visible apparatus that made it look like more work was happening. Strip that out and what's left is caring about the thing you're building, the person you're building it for, and the details. Which was always the job.
+
+## So where is it?
+
+Here's what nags at me, though.
+
+For all this efficiency in engineering, I'm genuinely shocked at how little of it has reached me as a customer. The products I use every day are not noticeably better than they were. Not faster, not less buggy, not obviously richer. Some of them have barely moved.
+
+Maybe they have and I'm not noticing. Maybe it's arriving slowly and I'll look up in a year. I honestly don't know. But the gap between how much gets written about the speed of building and how little has changed in the software I actually open every morning is strange, and I keep turning it over. What are they all doing with it?
+
+The uncomfortable answer I keep landing on is that the efficiency is going into work that doesn't matter very much.
+
+Every team has the list. All the things that never cleared the prioritisation bar. The bug backlog nobody could justify a sprint for, the tidy-ups, the small requests, the long tail. We spent years saying *if only we had the capacity* — imagine what we could do with more capacity, look at everything on this list.
+
+Well, now there's capacity. And I suspect a lot of teams are working straight down that list, shipping all of it, and it isn't landing. Because the list was never a list of high-value work. It was a list of things that lost, repeatedly, on purpose, to better things. Clearing it feels like enormous progress and may change almost nothing. Ten things shipped before lunch is not better than one thing that mattered.
+
+Which brings the whole thing round. We treated engineering time as the scarce resource and built an entire discipline around protecting it. Then it stopped being scarce — and the products carried on more or less as they were.
+
+That's the part I can't get past. Capacity was never the thing standing between those products and being good. We've just run the experiment that proves it, and I'm not sure many people have noticed the result.
