@@ -134,6 +134,14 @@ proves it. If capacity wasn't the constraint, judgement always was.
 
 ---
 
+> **Boundary with post 3.** The "old skill set" bullets above — execution,
+> playbooks, who struggles — now have a better home in `outline-deciders.md`,
+> where they're about people rather than about the profession. Keep the *claim*
+> here (good PMs separate from average ones, and here's why), move the *lived
+> consequence* there. Trim when you write, or ask me to.
+
+---
+
 ## Decisions still open
 
 - How hard to go on "mediocre product managers" — sharp or softened
