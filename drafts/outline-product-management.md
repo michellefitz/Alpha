@@ -112,6 +112,13 @@ proves it. If capacity wasn't the constraint, judgement always was.
 
 ## 5. The nag that ends it
 
+> **Boundary with post 4.** This beat is now the *opening* of
+> `outline-product-overhang.md`, which answers it properly — slow execution was
+> providing the learning cadence, and human adoption rate is the real ceiling.
+> Compress this beat to the observation plus the "capacity was never the
+> constraint" conclusion, and let post 4 carry the explanation.
+
+
 - For all this efficiency, **shockingly little has reached me as a customer**
 - Products I use daily aren't better. Not faster, not less buggy, not richer.
   Some have barely moved
