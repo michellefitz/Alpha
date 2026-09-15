@@ -105,7 +105,60 @@ Points to hit:
 - Explicit permission: you don't need to be cutting edge unless you work in a lab building models, and most people don't.
 - The distinction that stops this reading as laziness: **strategic about direction, relaxed about detail.**
 
-⚠️ **Gap only you can fill:** the metaphor promises a payoff — you have to name the trend *you* actually see and what it means for your space. One concrete call. Without it this section is a nice image with nothing in it.
+**Your two horizon calls.** This is the payoff the metaphor promises. Two is the right number — enough to be a real claim, few enough to stay a blog post and not a forecast.
+
+---
+
+**Call one: intelligence keeps getting cheaper, unevenly.**
+
+Points to hit:
+- You won't always have the bleeding-edge model, and that's fine. The thing that matters is that **mass-available intelligence keeps getting better while staying cheap.**
+- There will be crunch points — the fall isn't smooth.
+- Implication for the reader: don't architect around today's cost. The thing that's too expensive to do at scale this year probably isn't next year.
+
+Substance — and this is a strong, credible primary source:
+- **[Epoch AI, "LLM inference prices have fallen rapidly but unequally across tasks"](https://epoch.ai/data-insights/llm-inference-price-trends)** (Cottier, Snodin, Owen, Adamczewski, March 2025).
+  - The price to reach **GPT-4's performance on PhD-level science questions fell 40x per year.**
+  - Across six benchmarks the decline ranges from **9x to 900x per year**, depending on the capability milestone.
+  - The concrete ladder in their data: GPT-3-level performance on MMLU cost **$60 per million tokens in November 2021** and **$0.07 by October 2024**. Same capability, roughly 850x cheaper in under three years.
+  - **Their title is your nuance** — "unequally across tasks." That's your crunch points, in their data.
+  - Epoch's own caution, which you should carry: the very fastest drops happened in the most recent year, "so it's less clear that those will persist."
+- ⚠️ The page is from March 2025 and it's now September 2026 — check whether they've refreshed before quoting a figure. "LLMflation" (a16z's term, ~10x/year at a fixed quality bar) is a usable shorthand but a weaker citation than Epoch.
+
+**The counter you should handle** — it makes the call sharper, not weaker:
+- Unit price collapses while **total spend rises**. Reasoning models burn far more tokens per task, so cheaper intelligence gets consumed faster than it gets cheap. Classic Jevons paradox.
+- So "intelligence is getting cheap" and "my bill keeps going up" are both true, and the reader feels the second one. Naming that tension is more honest than the clean version — and it links directly to the cost frustration in post two.
+
+---
+
+**Call two: one-to-one becomes many-to-many.**
+
+Points to hit:
+- Today it's mostly solo: you and your agent. That's the anomaly, not the destination.
+- Where it goes: every product has humans *and* agents using it. Agents talking to agents. Two people and an agent on one piece of work. You working with several agents that have different skills.
+- The shift to name: **from one-to-one to many-to-many.** People, agents, all interacting — and the experience stops being solitary.
+- Implication for the reader: if you build products, the second user is already arriving and it isn't a person.
+
+Substance — **your prediction is less speculative than you think; the plumbing is being laid now:**
+- **[Linux Foundation, 9 April 2026](https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year)** — the A2A (Agent-to-Agent) protocol at its one-year mark:
+  - **150+ organizations** supporting it; v1.0 stable spec shipped.
+  - Embedded by all three major clouds — Microsoft (Azure AI Foundry, Copilot Studio) and AWS (Bedrock AgentCore Runtime), alongside Google.
+  - Production deployments in supply chain, financial services, insurance and IT operations.
+  - Agents built on different platforms (LangGraph, CrewAI) can now "work together, delegate sub-tasks, and coordinate complex workflows **without sharing internal memory**."
+  - **The line that is your argument, from their release:** *"As software systems operate more independently, coordination becomes the bottleneck."*
+- **Agents are getting identity and a wallet**, which is the real tell:
+  - **Signed Agent Cards** for cryptographic identity verification — agents need verifiable identity, which only matters if they're dealing with strangers.
+  - **Agent Payments Protocol (AP2)** for agent-driven transactions, already backed by **60+ organizations** across payments and financial services.
+- Complementary standard: MCP handles agent-to-tool (vertical), A2A handles agent-to-agent (horizontal). The pairing is deliberate. *(A widely repeated figure puts MCP at ~97M monthly SDK downloads by March 2026 — striking, but I only found it in secondary sources. Verify before using.)*
+
+**The counter you should handle:**
+- Multi-agent systems have over-promised before, and coordination overhead is real — more agents often means more failure modes, not more capability.
+- But note where the bottleneck actually moves: not capability, **trust**. Identity, permissions, liability, who pays when an agent gets it wrong. Signed Agent Cards and AP2 exist precisely because the industry already knows this.
+- That's a more interesting claim than "there will be lots of agents," and it's defensible.
+
+---
+
+**A note on both:** you said "I can't see how it won't go that way." Worth testing that on the page — a prediction that can't fail isn't really a prediction. For each, name the thing that would prove you wrong. It costs two sentences and it's what separates a horizon call from a vibe.
 
 ### 7. Why you can't tell what's hard
 
