@@ -289,7 +289,45 @@ Points to hit:
 Your raw material:
 > "You can open up a page that will tell you specifically what the cost difference is, but you can't put anything with any kind of specificity about what the cost difference is going to be for your task."
 
-### 2. Why you can't solve it yourself
+### 2. The ladder illusion — new doesn't mean better
+
+**The conceptual foundation of the post, and worth putting early.** Everything after it depends on the reader letting go of the ladder.
+
+Points to hit:
+- The assumption, and own it as one you've made: **new model = better model = better at everything.**
+- It isn't true. Models differ in *kind*, not just in degree. A newer one can be worse at something the older one did well.
+- **Numeric naming actively encourages the mistake.** Version numbers look like levels; effort settings look like points within a level. The whole naming convention implies a single axis you move along.
+- There is **no single intelligence score.** Different models are better at exploring and researching, at synthesising large sets of data, at creating, at writing, at image and video, at long multi-step work, at speed.
+- The second-order problem: even once you accept this, **how are you supposed to know which is which while you're working?** All that context lives somewhere else — other people's posts, benchmark sites, docs — and the model won't tell you when it's the wrong one for the job.
+
+Substance:
+- **METR say it outright**, in the FAQ of their time-horizons work: *"AI capabilities are uneven ('jagged') relative to humans, and we expect that time horizons on all economically valuable tasks will range over several orders of magnitude."* They found similar exponential trends in other domains but with **different absolute measurements** per domain. The research org measuring progress says capability is not one number.
+- **The irony worth naming:** the industry's answer to "capability isn't one number" has been to build a better single number. Epoch's [Capabilities Index](https://epoch.ai/eci) combines 39 benchmarks into one score and is explicitly described as *similar to an IQ test*. [Artificial Analysis](https://artificialanalysis.ai/methodology/intelligence-benchmarking) weights its Intelligence Index as Agents 30%, Coding 20%, Scientific Reasoning 20%, General 30%. Both are genuinely useful for tracking progress over time. Both are **actively misleading for picking a model for a task** — which is the only question a user actually has. That distinction is a strong beat.
+- **A documented, concrete example of difference-in-kind** — and it's the best one available because it comes from a team making the trade-off in production. Amp on why GPT-5 is their Oracle and Sonnet is their main agent: GPT-5 is *"surprisingly good... when planning or debugging"* but *"less proactive, less likely to jump over that last hurdle, compared to Sonnet, and these are qualities we look for in the main agent model."* Not better or worse. Differently shaped. They pair them for *"different training lineage"* and different blind spots.
+
+### 3. So what are they actually different at?
+
+**Read the note below before writing this section — it changes what you should put in it.**
+
+The axes that genuinely differ between models (durable; unlike a rankings table these don't go stale):
+
+- **Reasoning depth vs. latency** — deliberation against speed. Often directly traded off.
+- **Proactivity vs. deliberation** — does it drive to completion or stop to think? Amp's Sonnet/GPT-5 split is exactly this.
+- **Long-horizon coherence** — holding a multi-step task together without drifting. METR's time horizon measures this specifically.
+- **Effective context use** — not the advertised window. "Context rot" means instruction-following degrades well before the stated limit, and the usable window is smaller than the number on the box.
+- **Instruction-following and steerability** — how closely it stays inside what you asked for.
+- **Tool use and agentic reliability** — recovering from failures, not looping, knowing when to stop.
+- **Modality** — text, code, image, video, audio. Rarely the same model's strength.
+- **Tokens consumed per task** — separate from price per token, and often the bigger cost driver. A cheaper model that flails is more expensive.
+- **Training lineage** — different families have different blind spots. This is *why* a second opinion from another lab beats a second pass from the same one.
+- **Voice** — writing style and register, which barely shows up in benchmarks and matters enormously if you write.
+- **Willingness to push back** — directly relevant to your last post's agreement loop.
+
+⚠️ **Honest note on the list you asked me for.** I've given you the *axes* rather than a "model X is best at Y" table, deliberately. Any such table is stale within weeks, contested while it's current, and — the real point — **the reliable, current, task-specific version of it does not exist.** That absence is your thesis. If I'd handed you a confident rankings list, I'd have been doing the thing this post criticises: producing plausible guidance with nothing solid underneath. Worth saying in the piece itself: *I went looking for the list. There isn't one.*
+
+Where to actually look when you need current standings: [Artificial Analysis](https://artificialanalysis.ai/methodology/intelligence-benchmarking) for per-category breakdowns plus speed and price, and [Epoch's benchmarks hub](https://epoch.ai/benchmarks). Both are external to the products — which is the complaint.
+
+### 4. Why you can't solve it yourself
 
 Points to hit:
 - The obvious answer is to test — run the task at different effort levels and compare.
@@ -299,7 +337,7 @@ Points to hit:
 
 > "I'm not going to run the task multiple times on different effort levels and try and see what they do differently. I don't have time for that, and also that costs more money."
 
-### 3. The same failure in the documentation
+### 5. The same failure in the documentation
 
 Points to hit:
 - Same shape one level up: to learn what any of these models are good at, you have to leave the product and go to another source.
@@ -307,7 +345,7 @@ Points to hit:
 - The guidance that exists is abstract — concepts, not worked examples. And there's a real reason: these tools are so flexible that any single example looks arbitrary. **Generality is what makes them powerful and what makes them nearly impossible to teach.**
 - That reason explains the gap. It doesn't excuse leaving the user to close it alone.
 
-### 4. What good would look like
+### 6. What good would look like
 
 Points to hit — this is the constructive core, and specificity is what makes it land:
 - The choice should be **hidden by default**, surfaced only if you go looking. Exception: people actually building on models, routing between them inside their own products. That's a different user with a real need for the dial.
@@ -318,7 +356,7 @@ Points to hit — this is the constructive core, and specificity is what makes i
 
 Worth distinguishing so it doesn't read as anti-control: you're not asking for the dial to be removed. You're asking for it to be **advised**. Defaults that adapt, with the override still there.
 
-### 5. The bit that's already working — and what it reveals
+### 7. The bit that's already working — and what it reveals
 
 **Amp's Oracle is the best existing example, and the detail is better for your argument than you'd expect.** Full context below.
 
@@ -328,7 +366,7 @@ Points to hit:
 - And the vendor says plainly why: auto-consulting would cost you more money and slow you down, so they left the decision to you.
 - Which is the whole problem in one design note. The judgement call is handed to the person with the least information to make it, for a reason that's entirely about cost.
 
-### 6. The counter-argument you have to handle
+### 8. The counter-argument you have to handle
 
 **A sharp reader will raise this, so raise it first.**
 
@@ -337,14 +375,14 @@ Points to hit:
 - **Your rebuttal, and it's strong:** it doesn't need to be right. It needs to beat a user with no information at all. Right now the interface demands a judgement from the person least equipped to make it and offers nothing. The bar isn't perfect self-knowledge — it's better than an uninformed guess.
 - Optional second thread, flag it as your read rather than fact: the incentives are backwards. The party that knows when to escalate isn't the party that pays for escalating — and no vendor wants to be the product that quietly ran up your bill. So the safe move is to leave the dial to you and let the under-use be invisible.
 
-### 7. Where it shows up as tokenism
+### 9. Where it shows up as tokenism
 
 Points to hit:
 - The guidance that does surface is oddly thin — "try this," "get some emails from AI," "try these image styles."
 - Random, generic, disconnected from what you're actually doing.
 - The gap between that and what the system could infer from the work in front of it is the tell. It isn't a capability problem.
 
-### 8. Close
+### 10. Close
 
 - The claim to make: with this level of intelligence in the box, the interface shouldn't be a wall of undifferentiated choice.
 - The choices should be hidden, the defaults should move, and the system should explain itself.
