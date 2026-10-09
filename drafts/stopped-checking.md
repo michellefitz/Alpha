@@ -38,9 +38,7 @@ Now I ask for images constantly. Last week I wanted to know which jacket went wi
 
 That keeps happening. Something that didn't work a year ago quietly starts working, and the only way you find out is by trying it again. You have to keep challenging what you assume it can't do. But the moment it surprises you, it turns into a habit — one more thing you hand over and stop checking.
 
-People bring up the calculator here. Everyone said that if we all had calculators nobody would learn arithmetic, and we did learn it, and we still use calculators, and it was fine. That's mostly fair. The difference is that a calculator isn't recommending anything to me.
-
-Which is the part I can't put down. We all assume these things are impartial — working from what they know, telling us what they found. Today that's probably mostly true. But a few hundred million people who have stopped questioning the recommendation is worth a lot of money to anyone with something to sell, and I don't think we'd notice if somebody had a thumb on the scales. A [controlled study](https://www.science.org/doi/10.1126/sciadv.adw5578) found that people writing alongside a biased AI shifted their own opinions towards the bias, and still did it when they had been told the bias was there.
+That's the part I can't put down. We all assume these things are impartial — working from what they know, telling us what they found. Today that's probably mostly true. But a few hundred million people who have stopped questioning the recommendation is worth a lot of money to anyone with something to sell, and I don't think we'd notice if somebody had a thumb on the scales. A [controlled study](https://www.science.org/doi/10.1126/sciadv.adw5578) found that people writing alongside a biased AI shifted their own opinions towards the bias, and still did it when they had been told the bias was there.
 
 We spent twenty years learning not to trust search results. We skip the sponsored ones. We know the recommended product is the one that paid. None of that has carried over, because this doesn't turn up looking like an advert. It turns up looking like an answer.
 
