@@ -14,8 +14,6 @@ Sometimes I know what I want. I've got an eval in my head — a reasonable idea 
 
 The rest of the time I'm only asking. Recommend me something. Find me a light like this one. Plan this trip. What are the best ten. I've got no idea what the right answer looks like. That's why I'm asking.
 
-I used to do this with Google and I wasn't careful there either. But Google gave me ten links and I picked one. Now I get the answer, the answer is good, and I take it.
-
 So I've stopped challenging it. I push back when I already know the subject, or when something comes back obviously rubbish. The rest of the time: yeah, fine, that sounds good, let's start there. My husband sees me doing something the long way round and asks why I haven't just asked the AI. He's usually right.
 
 Which means I'm most sceptical about the things I already know, and least sceptical about everything else. That's backwards.
@@ -34,7 +32,7 @@ That's the loop. It agrees with you, so you trust it. You trust it, so you take 
 
 And the list of things I hand over keeps growing, because you don't know what it can do until you try it.
 
-We're redecorating part of the house. I'd written off AI for images — slow, always slightly off, close enough to be useless. On a whim I gave ChatGPT a photo, then some architect's drawings, and it built 3D models of our rooms, mood boards, proper renders of each space. Not perfect, some of the furniture sits at funny angles. But for the effort it took me to ask, what came back was amazing. I'd tried a few dedicated products first and every one was gated, paywalled, or impossible to tell whether it even worked.
+We're redecorating part of the house. I'd written off AI for images — slow, always slightly off, close enough to be useless. On a whim I gave ChatGPT a photo, then some architect's drawings, and it built 3D models of our rooms, mood boards, proper renders of each space. Not perfect, some of the furniture sits at funny angles. But for the effort it took me to ask, what came back was amazing.
 
 Now I ask for images constantly. Last week I wanted to know which jacket went with an outfit, so I had it generate pictures of me in each one.
 
