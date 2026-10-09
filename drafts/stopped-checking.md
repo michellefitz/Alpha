@@ -1,10 +1,12 @@
-# I've Stopped Checking
+# When Did You Last Disagree With AI?
 
 A lot has been written about AI being sycophantic. It agrees with you, it mirrors your framing back, it tells you your idea is a great one. [Anthropic's research](https://arxiv.org/abs/2310.13548) put the cause with us rather than with the machine: these models are tuned on human feedback, and what we rate highly is agreement.
 
-What gets less attention is what all that agreeing actually does. I think it's how the trust gets built.
+What gets less attention is the other side of it. I've stopped checking.
 
-Ask about a holiday and you get "Barcelona's lovely at that time of year." Ask about a light for the hallway and it tells you that's a good spot for one. Tiny things, and they're nice to hear. Someone agreed with me. And I'm much more likely to go along with someone who's just gone along with me — it feels like they understood the question, so the answer is probably good as well.
+Part of that is simply that it got good. Hallucinations used to be the thing everyone watched for — the warning in every article, the reason you verified before you used anything. I can't remember the last one I noticed, and I don't think about them at all anymore. Three or four years ago this was ask-and-answer, with a short memory and obvious mistakes. Now it does multi-step work, and quite often goes further than I asked it to. That change came in gradually, and my scepticism quietly left with it.
+
+The other part is softer. Ask about a holiday and you get "Barcelona's lovely at that time of year." Ask about a light for the hallway and it tells you that's a good spot for one. Tiny things, and they're nice to hear. Someone agreed with me. And I'm much more likely to go along with something that's just gone along with me — it feels like it understood the question, so the answer is probably good as well.
 
 Then there are two different ways I ask for things.
 
@@ -29,6 +31,14 @@ In a chat it'll write the next question for you. Do you want me to do X next? An
 None of it is sinister on its own. All of it makes saying yes the easy option, and keeps you moving down a path you didn't really choose.
 
 That's the loop. It agrees with you, so you trust it. You trust it, so you take the recommendation. Then it offers you the next step, and taking that is one keystroke. Round again.
+
+And the list of things I hand over keeps growing, because you don't know what it can do until you try it.
+
+We're redecorating part of the house. I'd written off AI for images — slow, always slightly off, close enough to be useless. On a whim I gave ChatGPT a photo, then some architect's drawings, and it built 3D models of our rooms, mood boards, proper renders of each space. Not perfect, some of the furniture sits at funny angles. But for the effort it took me to ask, what came back was amazing. I'd tried a few dedicated products first and every one was gated, paywalled, or impossible to tell whether it even worked.
+
+Now I ask for images constantly. Last week I wanted to know which jacket went with an outfit, so I had it generate pictures of me in each one.
+
+That keeps happening. Something that didn't work a year ago quietly starts working, and the only way you find out is by trying it again. You have to keep challenging what you assume it can't do. But the moment it surprises you, it turns into a habit — one more thing you hand over and stop checking.
 
 People bring up the calculator here. Everyone said that if we all had calculators nobody would learn arithmetic, and we did learn it, and we still use calculators, and it was fine. That's mostly fair. The difference is that a calculator isn't recommending anything to me.
 
