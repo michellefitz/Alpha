@@ -1,25 +1,39 @@
 # I've Stopped Checking
 
-A lot has been written about AI being sycophantic — agreeing with you, mirroring your framing back, telling you the idea is great. [Anthropic's research](https://arxiv.org/abs/2310.13548) traced it to us rather than to the machine: models are tuned on human feedback, and what we rate highly is agreement. That ground is well covered.
+A lot has been written about AI being sycophantic. It agrees with you, it mirrors your framing back, it tells you your idea is a great one. [Anthropic's research](https://arxiv.org/abs/2310.13548) put the cause with us rather than with the machine: these models are tuned on human feedback, and what we rate highly is agreement.
 
-The part I keep noticing is the other direction. I agree with it, too. And it's got worse as the models have got better.
+What gets less attention is what all that agreeing actually does. I think it's how the trust gets built.
 
-Roughly, I ask for two different kinds of thing.
+Ask about a holiday and you get "Barcelona's lovely at that time of year." Ask about a light for the hallway and it tells you that's a good spot for one. Tiny things, and they're nice to hear. Someone agreed with me. And I'm much more likely to go along with someone who's just gone along with me — it feels like they understood the question, so the answer is probably good as well.
 
-Sometimes I know what I want. I have an eval in my head — a reasonably clear picture of what a good answer looks like — and the work is articulating it: describing it, explaining it, giving context. If what comes back is wrong, I spot it, because I had something to measure it against.
+Then there are two different ways I ask for things.
 
-The rest of the time I'm just asking. Recommend me something. Find me a light like this one. Plan this trip. Give me feedback on this product. What are the best ten. I have no picture of the right answer. I'm asking precisely because I don't have one.
+Sometimes I know what I want. I've got an eval in my head — a reasonable idea of what a good answer looks like — and my job is just to describe it well enough. If what comes back is wrong, I'll spot it, because I had something to check it against.
 
-I used to treat Google this way and I wasn't careful there either. But Google gave me ten links and I chose between them. This gives me the answer, the answer is good, and I take it.
+The rest of the time I'm only asking. Recommend me something. Find me a light like this one. Plan this trip. What are the best ten. I've got no idea what the right answer looks like. That's why I'm asking.
 
-So I've stopped challenging it. I'm sceptical when I already know the subject, or when something comes back obviously rubbish. Otherwise: yes, fine, that looks good, let's start there. My husband watches me doing something the slow way and asks why I haven't just asked the AI, and he's usually right.
+I used to do this with Google and I wasn't careful there either. But Google gave me ten links and I picked one. Now I get the answer, the answer is good, and I take it.
 
-Which means my scepticism is strongest exactly where I need it least. The better I know a subject, the more I push back. The less I know, the more I take on trust. That's backwards, and the gap widens every time the answers get better.
+So I've stopped challenging it. I push back when I already know the subject, or when something comes back obviously rubbish. The rest of the time: yeah, fine, that sounds good, let's start there. My husband sees me doing something the long way round and asks why I haven't just asked the AI. He's usually right.
 
-The usual reassurance here is the calculator. If everyone has a calculator nobody will learn arithmetic — except they did, and we still use calculators, and it was fine. I think that's mostly right. It also isn't the same thing. A calculator has no view. Nobody is bidding to influence what 12 × 14 comes back as.
+Which means I'm most sceptical about the things I already know, and least sceptical about everything else. That's backwards.
 
-That's the part I can't put down. We assume these systems are impartial — working from what they know, telling us what they found. Today that's probably mostly true. But a few hundred million people who have stopped questioning the recommendation is worth an extraordinary amount to anyone with something to sell, and we are very poorly placed to notice a thumb on the scales. A [controlled study](https://www.science.org/doi/10.1126/sciadv.adw5578) found that people writing alongside a biased AI shifted their own opinions toward the bias — and still did it when they had been warned the bias was there.
+## Everything is built to help you agree
 
-We spent twenty years learning not to trust search rankings. We skip the sponsored results. We know the recommended product isn't the best one, it's the one that paid. None of that instinct has carried over, because what's being recommended now doesn't look like an advert. It looks like an answer.
+The other thing I keep noticing is how much of the design pushes the same way.
 
-I'm not going to use it less — it's too useful, and pretending otherwise would be precious. But I've started trying to notice which of the two modes I'm in. And when it's the second one, to ask who told me, and whether I'd have any idea if they were wrong.
+There's suggested text everywhere now, sitting there waiting to be completed. My email replies get written for me and I press tab. It gives me the answer and then tells me what to do next, so I press tab again. I get three options and one of them says "recommended" — and yeah, okay, the recommended one sounds good to me, let's go with that, it's recommended.
+
+In a chat it'll write the next question for you. Do you want me to do X next? And you say yes. Sometimes there's helper text telling you that you can just tap to complete. It's mad.
+
+None of it is sinister on its own. All of it makes saying yes the easy option, and keeps you moving down a path you didn't really choose.
+
+That's the loop. It agrees with you, so you trust it. You trust it, so you take the recommendation. Then it offers you the next step, and taking that is one keystroke. Round again.
+
+People bring up the calculator here. Everyone said that if we all had calculators nobody would learn arithmetic, and we did learn it, and we still use calculators, and it was fine. That's mostly fair. The difference is that a calculator isn't recommending anything to me.
+
+Which is the part I can't put down. We all assume these things are impartial — working from what they know, telling us what they found. Today that's probably mostly true. But a few hundred million people who have stopped questioning the recommendation is worth a lot of money to anyone with something to sell, and I don't think we'd notice if somebody had a thumb on the scales. A [controlled study](https://www.science.org/doi/10.1126/sciadv.adw5578) found that people writing alongside a biased AI shifted their own opinions towards the bias, and still did it when they had been told the bias was there.
+
+We spent twenty years learning not to trust search results. We skip the sponsored ones. We know the recommended product is the one that paid. None of that has carried over, because this doesn't turn up looking like an advert. It turns up looking like an answer.
+
+I'm not going to use it less. But there's one question I've started asking myself: when did I last disagree with it? Not corrected something it got factually wrong — actually pushed back, turned down what it offered, gone a different way instead. Quite often I can't remember, and that's what bothers me.
