@@ -38,6 +38,14 @@ So now I ask for images constantly. Last week I wanted to know which jacket went
 
 That keeps happening. Something that didn't work a year ago quietly starts working, and the only way you find out is by going back and trying it again. You have to keep challenging what you assume it can't do. But the second it surprises you, it becomes a habit — one more thing you hand over and stop checking.
 
+The thing I'm watching now is personal agents.
+
+I've only just started using them, and it's very early — weeks, really. Mostly what's happening is people slowly realising they can ask for things at all. That's a new muscle to build: oh, I suppose I could get the agent to do that. I think it'll take most people ages.
+
+Today I got mine to go through my inbox and unsubscribe from everything I haven't been opening. Someone had suggested it and I thought, oh yeah, I should do that. It worked, and straight away I was thinking, okay, what else can I get it to look at in there?
+
+Same pattern again. And I don't want to overclaim here, because nobody really knows where this goes yet. But a recommendation that changes what you cancel, or buy, or book, is a different thing from a recommendation about your work. It's much closer to home, and it doesn't get weighed up. It just gets done.
+
 And that's the bit I can't put down. We all assume these things are impartial. They're working from what they know, telling us what they found. Today that's probably mostly true. But a few hundred million people who've stopped questioning the recommendation is worth an enormous amount to anyone with something to sell, and honestly, I don't think we'd notice if somebody had their thumb on the scales. There's a [controlled study](https://www.science.org/doi/10.1126/sciadv.adw5578) where people writing alongside a biased AI shifted their own opinions towards the bias — and they still did it after they'd been told the bias was there.
 
 We spent twenty years learning not to trust search results. We skip the sponsored ones. We know the recommended product is the one that paid. None of that instinct has come with us, because this doesn't show up looking like an advert. It shows up looking like the answer.
