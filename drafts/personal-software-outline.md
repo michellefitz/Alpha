@@ -45,7 +45,61 @@ And a second framing worth trying: **software stopped being a durable good.** It
 
 ---
 
-## Narrative arc
+## Your examples, and the pattern in them
+
+### What you've built
+
+| Thing | Category | Lifespan |
+|---|---|---|
+| Skyscanner Chrome extension — flight permutations as a Gantt chart: stopover lengths, total duration, takeoff and landing in local *and* destination time | on-the-fly | used once |
+| 3D walkthrough of the house extension from the architects' files — room sizes, then interactive furniture placement, then photorealistic Blender renders (Claude) | on-the-fly | a few sessions |
+| Mood boards per room, built from the floor plans plus a few reference examples (ChatGPT) | on-the-fly | a few sessions |
+| Window and porch positioning app — reposition and re-centre openings, then a button to view it in 3D from any angle (Claude) | on-the-fly | one evening, with your husband |
+| Space games for your son — the planets; why the Earth turns and it gets dark | somewhere between | returned to a couple of times |
+
+### The pattern: you don't build software to *do* things, you build it to *see* things
+
+**This is the most original observation available to you, and it's stronger than the disposable/kept distinction.** Four of the five exist to answer a question you couldn't otherwise answer:
+
+- Flights: *which of fifty permutations is least brutal for the kids?*
+- Windows: *will we actually notice the asymmetry?*
+- Walkthrough: *how big is this room really?*
+- Mood boards: *what could this look like?*
+
+None of them performs a task. Each one makes a decision possible. They're **instruments for thinking**, not productivity apps. The kids' games are the exception — those explain rather than decide, which is why they sit oddly in the taxonomy.
+
+Worth noticing what the four decision tools have in common: **they're all problems with too many interacting variables to hold in your head.** Time zones × four legs × two stopovers × children's sleep. Asymmetry across a whole facade. Spatial volume inferred from flat drawings. These are working-memory problems, and the fix for a working-memory problem has always been an external representation — a chart, a model, a sketch. What changed is that you can now build the *specific* representation for the *specific* problem, instead of forcing your problem into a tool someone else built.
+
+**Suggested refinement to your taxonomy:** keep on-the-fly vs personal as the top-level split, and add this as the thing that makes the on-the-fly half interesting. "Disposable software" describes its lifespan. "Software to understand something" describes its *purpose*, which is the part nobody is writing about.
+
+### The "used once" objection, and your answer
+
+The flight extension is the best example in the post *because* you only used it once. It invites the obvious challenge — was that worth building? — and the answer reframes the whole category:
+
+- Conventional software economics: value = users × usage. One user, one use, is a failure.
+- **On-the-fly software breaks that.** The flight tool informed one expensive, hard-to-reverse family decision. The value was concentrated, not distributed.
+- So: **one-use software can be the highest-value software you build**, when the problem is high-stakes and genuinely one-off.
+- Say this explicitly. It's the sentence that makes the category defensible rather than cute.
+
+### The multiplayer detail
+
+*"Sit with my husband and go click, click, click."* Keep this. The software existed to **mediate a conversation between two people** — it wasn't a tool either of you used alone. It's the warmest moment in your material, and it quietly supports the many-to-many horizon call in the keeping-up post.
+
+### You used different models for different jobs, by instinct
+
+Claude for the 3D, interactive and Blender work. ChatGPT for the mood boards and image generation. You didn't decide that from a benchmark — you felt it.
+
+That's a free, concrete illustration of the "models differ in kind, not degree" argument in the guidance post. Worth one line here and a cross-reference there: the evidence that capability isn't a single score is that a non-engineer routes between models correctly without being told.
+
+### On "very little direction" — a gentle challenge
+
+You've said the models are now good enough that a tiny prompt gets something impressive, and Willison's published prompts back that up. True, and worth saying.
+
+But be careful it doesn't become "anyone can do this with no skill," because your results suggest otherwise. You knew that flight options should be compared on a timeline. You knew mood boards needed reference examples. You knew the window tool needed a 3D toggle to be useful. **That's product judgement, and it's doing a lot of the work.** The skill didn't disappear — it moved from writing code to specifying an outcome.
+
+That's a more honest claim and a more useful one: the barrier that fell was implementation, not taste. Readers who try this with no sense of what good looks like get slop, and they should know that going in.
+
+
 
 ### 1. Open — one of each, concretely
 
@@ -157,9 +211,14 @@ Points to land:
 
 **2. What's your actual ratio?** How many disposable things have you built, and how many survived into category two? Willison published 241. A real number from you — even "about forty, three survived" — is the most persuasive sentence available, and it's the kind of specificity your last post had.
 
-**3. Are the collages and family videos actually software?** A collage made with AI is an artifact, not an app. A game your kids play is software. Sloan's lineage is specifically software. This is a genuine fork: either narrow the post to things that are software, or name the third category deliberately. Don't let it sit unresolved — a reader will notice.
+**3. Which of these is software, and which is an artifact?** The Chrome extension, the window tool and the kids' games are software. The mood boards are generated images — an artifact made with AI, not an app. The 3D walkthrough sits between: a model you look around, which became software when you added furniture you could move. Sloan's lineage is specifically software. Either narrow the post, or name the distinction deliberately — don't leave it for a reader to spot.
 
-**4. Does the verification risk apply to you?** Section 5 is strongest if you can give a case where a disposable tool gave you a confidently wrong answer and you nearly used it. If that's never happened, say so, but then ask on the page how you'd know.
+**4. How would you know if the flight chart was wrong?** This is the challenge I'd most want you to sit with, because your most impressive examples are also the ones where being wrong costs the most.
+
+- The flight tool parsed times across multiple zones and rendered them on a timeline. If it got a UTC offset or a day-boundary wrong, the chart would look exactly as convincing and you'd have chosen a worse flight.
+- The 3D walkthrough inferred dimensions from architects' drawings. If it misread a scale, you have photorealistic renders of a house that isn't the one being built — and you'd be making furniture and layout decisions against it.
+- Did you check either? Honest answer either way is interesting. If you did, say how — that's the most practically useful paragraph in the post. If you didn't, that's the agreement loop from your last post arriving in a new place: output that is plausible, articulate, unverified, and now load-bearing on a decision worth thousands.
+- The jagged-frontier point bites hardest here: you can't spot-check work you couldn't have done yourself. Which doesn't mean don't build these things — it means the verification question is the one the whole genre is ignoring.
 
 **5. Did you already start this on your site?** You mentioned a portfolio site you were building. If there's an earlier version of this post there, worth digging out — you may already have the examples, and reconciling the two drafts is easier than starting clean.
 
