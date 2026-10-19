@@ -1,244 +1,205 @@
-# Outline: Personal software and on-the-fly software
+# Outline: Software to think with
 
-Structure, points to hit, and supporting material. No drafted prose.
+Structure, points to hit, and supporting material. No drafted prose — all wording is yours.
 
 Working titles:
-- **Two Kinds of Software Nobody Else Will Ever Use**
-- Disposable Software
+- **Could I Build Something for This?** *(favourite — it's your mantra, and it's the takeaway)*
+- Software to Think With
 - Cheaper to Build Than to Find
-- Software for One, Software for Once
+- Software for Once
 
 ---
 
-## The spine: your distinction is the post
+## The spine
 
-The taxonomy you drew is the contribution. Everything else is support.
+**Your mantra is the post.** When you hit a question or an obstacle: *could building software help me here?* The old reflex was to draw it out or make a spreadsheet. The new one is to build something, in minutes, for exactly this problem.
 
-| | **On-the-fly software** | **Personal software** |
+Everything else is evidence for why that reflex now makes sense, and what it gets you:
+
+1. **What changed:** building got cheaper than finding. A small prompt with very little direction gets you something good.
+2. **What you actually build:** not tools that *do* things — instruments that let you *see* things. To decide, or to learn.
+3. **How long it lives:** mostly once. That's fine — one-use can be the highest-value software you'll make.
+4. **Who it's for:** usually you, sometimes the person across the table, sometimes someone else's team.
+5. **What it costs you:** less checking than you'd think, *because* it's a thinking aid rather than the decision itself — and more taste than people admit.
+
+---
+
+## Your examples, sorted by what they're for
+
+**To decide:**
+
+| Thing | What it let you see | Model | Lifespan |
+|---|---|---|---|
+| Skyscanner Chrome extension — flights as a Gantt chart | stopover lengths, total duration, landing in local vs your body's time | — | used once |
+| Window and porch positioning tool, with a 3D toggle | whether you'd notice the asymmetry | Claude | one evening, with your husband |
+| 3D walkthrough of the extension, then movable furniture, then Blender renders | how big the rooms really are | Claude | a few sessions |
+| Mood boards per room from the floor plans | what it could look like | ChatGPT | a few sessions |
+| You in ten different jackets with your dress, then real ones for sale in the styles you liked | which jacket | ChatGPT | one shopping trip |
+
+**To learn:**
+
+| Thing | What it let someone see | Lifespan |
 |---|---|---|
-| Solves | a moment | an ongoing need |
-| Lifespan | minutes to hours | months to years |
-| Do you name it? | no | yes |
-| Do you return to it? | no | constantly |
-| Maintenance | none — it dies before it can rot | real, but now cheap |
-| Needs hosting, auth, a database? | no | usually |
-| Decision to build | none. you just do it | deliberate |
-| Competes with | doing it by hand, or searching for a tool | paying for an app |
+| Space games for your son — the planets; why the Earth turns and it gets dark | how the solar system works | returned to a couple of times |
+| Crisis simulation demo for your friend's journalism conference | how a crisis unfolds and how you'd steer it | handed to her team to develop |
 
-**Why this framing matters:** the existing writing on this is almost entirely about the right-hand column. Waxman, Sloan, Lee Robinson — all personal software. **The left-hand column is barely written about and has no accepted name.** I looked; "disposable software" and "throwaway software" aren't established terms for it. Simon Willison has built 241 of these things and calls it only *"an experiment in prompt-driven development with very low stakes."*
-
-So the naming is available, and naming it is the most valuable thing this post can do. That's your lede, not a section.
+**The pattern:** every single one is about understanding. None of them performs a task. That's the observation that separates this from every other personal-software post — they're all about software that *does* things for you.
 
 ---
 
-## The idea underneath it
+## Narrative arc
 
-The strongest thing in your material, and worth making explicit because it explains *why* on-the-fly software is a new category rather than just small personal software:
+### 1. Open — the mantra, through one example
 
-**Building became cheaper than finding.**
-
-- Old order: small problem → search for a tool → evaluate, sign up, learn its interface → use it. You searched because building cost more than searching.
-- New order: small problem → describe the outcome → use the thing → close the tab.
-- You no longer need to know a tool exists. You don't need to learn anyone's interface. The discovery step — and the learning step — disappear.
-
-And a second framing worth trying: **software stopped being a durable good.** It used to be something you acquired, installed, learned and kept. On-the-fly software is a consumable. Paper plates, not china. That's a genuine shift in what the word "software" even points at.
-
----
-
-## Your examples, and the pattern in them
-
-### What you've built
-
-| Thing | Category | Lifespan |
-|---|---|---|
-| Skyscanner Chrome extension — flight permutations as a Gantt chart: stopover lengths, total duration, takeoff and landing in local *and* destination time | on-the-fly | used once |
-| 3D walkthrough of the house extension from the architects' files — room sizes, then interactive furniture placement, then photorealistic Blender renders (Claude) | on-the-fly | a few sessions |
-| Mood boards per room, built from the floor plans plus a few reference examples (ChatGPT) | on-the-fly | a few sessions |
-| Window and porch positioning app — reposition and re-centre openings, then a button to view it in 3D from any angle (Claude) | on-the-fly | one evening, with your husband |
-| Space games for your son — the planets; why the Earth turns and it gets dark | somewhere between | returned to a couple of times |
-
-### The pattern: you don't build software to *do* things, you build it to *see* things
-
-**This is the most original observation available to you, and it's stronger than the disposable/kept distinction.** Four of the five exist to answer a question you couldn't otherwise answer:
-
-- Flights: *which of fifty permutations is least brutal for the kids?*
-- Windows: *will we actually notice the asymmetry?*
-- Walkthrough: *how big is this room really?*
-- Mood boards: *what could this look like?*
-
-None of them performs a task. Each one makes a decision possible. They're **instruments for thinking**, not productivity apps. The kids' games are the exception — those explain rather than decide, which is why they sit oddly in the taxonomy.
-
-Worth noticing what the four decision tools have in common: **they're all problems with too many interacting variables to hold in your head.** Time zones × four legs × two stopovers × children's sleep. Asymmetry across a whole facade. Spatial volume inferred from flat drawings. These are working-memory problems, and the fix for a working-memory problem has always been an external representation — a chart, a model, a sketch. What changed is that you can now build the *specific* representation for the *specific* problem, instead of forcing your problem into a tool someone else built.
-
-**Suggested refinement to your taxonomy:** keep on-the-fly vs personal as the top-level split, and add this as the thing that makes the on-the-fly half interesting. "Disposable software" describes its lifespan. "Software to understand something" describes its *purpose*, which is the part nobody is writing about.
-
-### The "used once" objection, and your answer
-
-The flight extension is the best example in the post *because* you only used it once. It invites the obvious challenge — was that worth building? — and the answer reframes the whole category:
-
-- Conventional software economics: value = users × usage. One user, one use, is a failure.
-- **On-the-fly software breaks that.** The flight tool informed one expensive, hard-to-reverse family decision. The value was concentrated, not distributed.
-- So: **one-use software can be the highest-value software you build**, when the problem is high-stakes and genuinely one-off.
-- Say this explicitly. It's the sentence that makes the category defensible rather than cute.
-
-### The multiplayer detail
-
-*"Sit with my husband and go click, click, click."* Keep this. The software existed to **mediate a conversation between two people** — it wasn't a tool either of you used alone. It's the warmest moment in your material, and it quietly supports the many-to-many horizon call in the keeping-up post.
-
-### You used different models for different jobs, by instinct
-
-Claude for the 3D, interactive and Blender work. ChatGPT for the mood boards and image generation. You didn't decide that from a benchmark — you felt it.
-
-That's a free, concrete illustration of the "models differ in kind, not degree" argument in the guidance post. Worth one line here and a cross-reference there: the evidence that capability isn't a single score is that a non-engineer routes between models correctly without being told.
-
-### On "very little direction" — a gentle challenge
-
-You've said the models are now good enough that a tiny prompt gets something impressive, and Willison's published prompts back that up. True, and worth saying.
-
-But be careful it doesn't become "anyone can do this with no skill," because your results suggest otherwise. You knew that flight options should be compared on a timeline. You knew mood boards needed reference examples. You knew the window tool needed a 3D toggle to be useful. **That's product judgement, and it's doing a lot of the work.** The skill didn't disappear — it moved from writing code to specifying an outcome.
-
-That's a more honest claim and a more useful one: the barrier that fell was implementation, not taste. Readers who try this with no sense of what good looks like get slop, and they should know that going in.
-
-
-
-### 1. Open — one of each, concretely
-
-**Does:** sets up the distinction immediately through example rather than definition.
+**Does:** puts the reflex in front of the reader before naming it.
 
 Points to hit:
-- One disposable thing you built to get through a specific afternoon. Name the problem, the thing, how long it took, and the fact you never opened it again.
-- One bespoke thing you still use. Name who it's for and how long you've had it.
-- Then the claim: these are two different activities that get talked about as one, and the first one barely gets talked about at all.
-- Your qualifier, early: you've never handwritten code.
+- The flights. Two stopovers, one in Europe, one in Asia, fifty results, time zones, kids.
+- The question that couldn't be answered from a list: will we land at 9am, which is actually 3am for them?
+- The old move would have been a spreadsheet or a sketch.
+- What you did instead, and how long it took.
+- Then the mantra, stated plainly.
 
-Don't open by defining the categories. Open with the two examples and let the distinction land on its own.
+Your raw material:
+> "When I run into any kind of question or obstacle, I'm like, 'Can I build software to solve this problem? Could building software help me here?' because I can build it so fast, in minutes."
 
-### 2. On-the-fly software
+> "I used to always find another way to solve it."
 
-**Does:** the under-written half. Give it the most room — this is where the post is original.
+### 2. What changed
+
+**Does:** the hinge. **Keep it short** — this is the part everyone else writes.
 
 Points to hit:
-- You have something to do. You build a micro-app, an artifact, a small site. You solve the thing. You close it.
-- No name, no repo, no deployment, no maintenance, no second visit.
-- Why it's not just "a small app": the decision to build never happens. There's no evaluation, no "is this worth building." You just do it, the way you'd open a notes file.
-- **Cheaper to build than to find.** Spell this out — it's the mechanism.
-- What disappears: discovery, sign-up, learning curve, lock-in, sunk cost, subscription.
-- The weird part worth dwelling on: it's software with no future. Normally that's a failure. Here it's the design.
+- You give it a small starting point and very little direction, and it builds something good.
+- So for a small problem, **building became cheaper than finding.** Old order: search, evaluate, sign up, learn the interface. New order: describe what you want to see, use it, close the tab.
+- And you've never handwritten code. Say this here.
 
 Substance:
-- **[Simon Willison's tools collection](https://tools.simonwillison.net/)** is the best evidence anyone is doing this at scale. **241 tools** as of now, up from 78 in March 2025. Each one a **self-contained single HTML file** — inline CSS and JS, no build system, no bundler, no shared framework.
-- His own framing: *"an experiment in prompt-driven development with very low stakes."*
-- The detail that makes it citable rather than anecdotal: **[the colophon](https://tools.simonwillison.net/colophon)** publishes commit messages and LLM transcripts for every single tool. He shows the receipts.
-- Note the tell in his own numbers: 78 → 241 in about eighteen months. The rate is the argument.
+- **[Simon Willison's tools](https://tools.simonwillison.net/)** — **241** small tools as of now, up from 78 in March 2025. Each is a single self-contained HTML file. **[The colophon](https://tools.simonwillison.net/colophon)** publishes the prompts and transcripts, and as you noticed, they're strikingly basic. That's the evidence for "very little direction" — from someone who shows his working.
+- **[Robin Sloan, 2020](https://www.robinsloan.com/notes/home-cooked-app/)**, building a family app: *"In a better world, I would have built this in a day, using some kind of modern, flexible HyperCard for iOS."* It took him a week, half of it on code-signing. You're living in his better world, and in minutes rather than a day.
 
-### 3. Personal software
+### 3. Software to see with
 
-**Does:** the better-documented half. Can be shorter because you can lean on existing work.
+**Does:** your most original idea. Give it the most room.
 
 Points to hit:
-- Bespoke, built for you, used repeatedly, never shared and never meant to be.
-- Different relationship: you maintain it, you add to it, it accumulates.
-- Why you'd build rather than subscribe — it fits you exactly, and nothing about it will change under you.
+- Your builds don't do things; they let you see things.
+- Two purposes: **to decide** (flights, windows, walkthrough, mood boards, jackets) and **to learn** (space games, crisis sim).
+- What the decision ones share: too many interacting variables to hold in your head. Time zones × legs × stopovers × children's sleep. Asymmetry across a whole facade. Volume from flat drawings.
+- The fix for that kind of problem has always been an external representation — a chart, a model, a sketch. The new part is that you can build the **specific** representation for the **specific** problem, instead of forcing your problem into a generic tool.
+- The husband moment belongs here: the window tool existed so two people could *see the same thing* and decide together. Click, click, click, then "show me this in 3D."
+
+Substance — and this is the reference that gives the section real weight:
+- **[Bret Victor, "Explorable Explanations", March 2011](https://worrydream.com/ExplorableExplanations/)**. Victor is the canonical thinker on interactive representations as thinking tools, and his categories map onto your builds almost exactly:
+  - *"A reactive document allows the reader to play with the author's assumptions and analyses, and see the consequences."* → your window tool.
+  - *"An explorable example makes the abstract concrete, and allows the reader to develop an intuition for how a system works."* → your son's space games, and the crisis sim.
+  - He describes his prototype as *"like a spreadsheet without the spreadsheet"* — which is almost word for word what replaced your old spreadsheet reflex.
+  - The diagnosis that sets up your whole post: *"We form questions, but can't answer them. We consider alternatives, but can't explore them. We question assumptions, but can't verify them."*
+  - And his aim: *"I want text to be used as an environment to think in."*
+- **The point to land:** Victor hand-crafted these as research projects, one at a time, over years. You now make one for a single question on a Tuesday evening. Same arc as Sloan — the idea is old, the cost collapsed.
+
+### 4. Most of it lives once — and that's fine
+
+**Does:** your original disposable/kept distinction, now in service of the argument.
+
+Points to hit:
+- Two lifespans: **on-the-fly** (built for a moment, never opened again) and **personal** (bespoke, kept, used repeatedly, never shared).
+- Nearly everything you've described is the first kind.
+- The obvious objection — you only used the flight tool once, was it worth it? — and your answer: it informed one expensive, hard-to-reverse family decision. **The value was concentrated, not absent.**
+- Conventional software assumes value = users × usage. Software for once breaks that maths. One use, if the decision is big, can be worth more than a year of a subscription.
+- Name the on-the-fly category. It doesn't have an accepted name yet; Willison calls his only *"an experiment in prompt-driven development with very low stakes."*
 
 Substance:
-- **[Robin Sloan, "An app can be a home-cooked meal", Feb 2020](https://www.robinsloan.com/notes/home-cooked-app/)** — the canonical text. BoopSnoop, a messaging app for his family.
-  - *"It launched in the first week of January 2020, and almost immediately, it was downloaded by four people in three different time zones. In the years since, it has remained steady at four daily active users, with zero churn: a resounding success, exceeding every one of its creator's expectations."*
-  - *"It is ruthlessly simple; we love it; no one else will ever use it."*
-  - Why not WhatsApp: *"having our warm channel surrounded — encroached upon — by all that other garbage."*
-  - The sovereignty line: *"There will be no sudden redesign, no flood of ads, no pivot to chase a userbase inscrutable to us."*
-  - And the line that dates it: *"In a better world, I would have built this in a day, using some kind of modern, flexible HyperCard for iOS."* A week in practice, **half of it on code-signing and provisioning.**
-- **Clay Shirky on situated software**, quoted by Sloan: *"Situated software, by contrast, doesn't need to be personalized — it is personal from its inception."* 2004. Sharper than "personal," and useful if you want a word for the right-hand column.
-- **[Adam Waxman, "Software for One", 28 July 2026](https://www.ajwaxman.com/writing/software-for-one)** — the AI-era update, and **read it before you write.** His sleep app took a week of evenings, his fitness app a weekend, his jazz quiz a single evening. *"Imagination is now the limiting factor."* On maintenance: *"9/10 times a feedback screenshot shared with Claude gets the job done."* Cost ~$160/month, mostly a subscription he'd keep anyway.
-  - ⚠️ **He has already written the default version of the right-hand column.** Which is another reason to lead with on-the-fly software and the distinction. Don't compete with him on his own ground.
+- **[Adam Waxman, "Software for One", 28 July 2026](https://www.ajwaxman.com/writing/software-for-one)** — the recent version of the personal-software half, and he argues *"ephemeral is fine"*: he retired his sleep app after four months. **Read it before you write** — he's written the default version of the kept-software column, so don't compete there.
 
-### 4. Why the distinction matters
+### 5. Building for other people
 
-**Does:** justifies the taxonomy. Short, but it needs to be here or the post is just two lists.
+**Does:** shows the reflex isn't only personal. Short, and a nice turn.
 
 Points to hit:
-- They have different failure modes. Personal software rots — it needs maintaining. On-the-fly software can't rot, because it's gone.
-- They have different economics. One replaces a subscription. The other replaces a search.
-- They need different tools. A disposable artifact wants zero setup. A kept app wants somewhere to live, data that persists, maybe auth.
-- And the practical point for a reader: **knowing which one you're making stops you over-building.** Most of the pain comes from building a disposable thing as though it has to last.
+- Your friend's crisis-management journalism conference. Someone suggested finding an app.
+- Your response: *"Why don't you just build one?"* — and then you did, as a demo.
+- What the demo did that a conversation couldn't: her team could see it, click through a crisis, and decide whether to develop it.
+- The broader point: a working prototype replaces the meeting about what an app *might* be. Same reflex as the flights — build the thing so people can see it — aimed outward.
 
-That last point is the useful takeaway. It's the thing a reader can act on tomorrow.
+### 6. It isn't even always software
 
-### 5. What you lose
-
-**Does:** stops the post being an advert. This is the section that makes it credible, and it's where your previous post connects.
+**Does:** resolves the artifact question honestly. One short section, or fold into section 3.
 
 Points to hit:
-- **Nothing compounds.** Build it, bin it, build it again. You don't accumulate tools and you don't get better at any one of them.
-- **You never learn the good tool exists.** You build your own mediocre version instead of finding the excellent one someone spent years on. The discovery step you skipped was also doing you a favour.
-- **Verification.** You use a disposable thing once and trust its output. Did it actually compute the right answer? With a spreadsheet you'd sanity-check. With a one-off app you often don't — and it looks finished either way.
-- That last one is the agreement loop from your previous post, in a new place: output that's plausible, articulate, and unchecked. Worth one explicit line linking back.
-- The jagged-frontier point applies too: you can't tell whether a small app got it right, because you couldn't have built it yourself.
+- The jackets: dress length and a photo of you, rendered in ten jackets, then real ones found for sale in the styles you liked. Mood boards from floor plans. Lookbooks for a trip.
+- These are images, not apps. But they're the same move: **make a representation so you can see the decision.**
+- Which suggests the real subject isn't software at all — it's making bespoke things to think with. Software is just the sharpest case.
 
-This section is the most original *critical* thing you'd be saying. Nobody writing about this is writing about the verification risk.
+Your raw material:
+> "It was just insane, such a crazy way to shop. I just made it up."
 
-### 6. The useless half
+**Decision needed** — see challenges below.
 
-**Does:** your warmest material, and the differentiator from Waxman.
+### 7. How much should you trust it?
 
-Points to hit:
-- Most writing about personal software is about optimising your life — sleep, training, nutrition. Useful and a bit joyless.
-- The other use is play: collages and collections, videos from family photos, games built from your kids' ridiculous ideas, something for a hobby.
-- Ridiculous requests, stupid features, delights. No audience, no metrics.
-- The radical version, and Sloan said it first: **four daily active users is a resounding success.**
-
-### 7. Why play is where you learn
-
-**Does:** the bridge to the keeping-up post. Keep it to a few lines so it doesn't take over.
+**Does:** the credibility section. Your honest answer makes it stronger than I'd expected.
 
 Points to hit:
-- On real work you use what you know works, because there's a deadline. You don't experiment with something at stake.
-- A low-stakes project is the only place you'll push past where you'd normally stop, or find out what a model is bad at.
-- Your PRD ritual belongs here: a standing PRD you throw at each new model. One prompt, and you *feel* the difference instead of reading someone's review.
-- Protect it from justification — the bleed-over into work is a side effect, not the reason. Once play has to pay rent, it stops working.
+- You checked things as you used them, but not formally — and that was fine, because **they were inputs to your thinking, not the decision itself.**
+- That gives you a usable principle: **how much you need to verify scales with how much weight the output carries.** A thinking aid that sits alongside your own judgement needs less checking than a tool that's the only input.
+- Where it would matter: if a tool becomes the *sole* basis for something expensive. The flight chart is fine as one view of fifty options; it would be risky as the only thing you looked at.
+- The second honest point: **the barrier that fell was implementation, not taste.** You knew flights wanted a timeline, mood boards wanted reference examples, the window tool needed a 3D toggle. That's product judgement, and it's doing more of the work than "very little direction" suggests. Readers with no sense of what good looks like will get slop, and should know it.
+- One line back to your agreement-loop post works here: the risk is plausible, articulate output that quietly becomes load-bearing.
 
-### 8. Close
+Your raw material:
+> "Using them to think through stuff more than being the only input into the decision."
+
+### 8. Play
+
+**Does:** the warm note, and a bridge to the keeping-up post. Keep it to a few lines.
+
+Points to hit:
+- The space games: your son asked a question, you built an answer he could poke at.
+- You used Claude for the 3D and Blender work and ChatGPT for images, without anyone telling you which was better at what. You found out by playing.
+- Low-stakes building is where you learn what these things can do, because on real work you stick to what you know works.
+
+### 9. Close
 
 Points to land:
-- Two things got cheap at once: building something to keep, and building something to throw away.
-- The second is the stranger shift and the less noticed one.
+- The mantra, as the thing the reader takes away: next time you hit a question, ask whether building something would help you see it.
+- It probably would, and it probably takes minutes.
 - Don't tie a bow.
 
 ---
 
 ## Challenges
 
-**1. Name the on-the-fly category.** This is the single highest-value thing in the post and it's currently unclaimed. "Disposable software," "software for once," "one-afternoon software" — whatever you land on, commit to it in the title or the first paragraph. A named idea gets cited; an observed one doesn't.
+**1. Software, or things to think with?** Section 6 forces a choice:
+- **Narrow:** keep the post about software, and drop or footnote the jackets and mood boards. Cleaner, and the mantra stays literal.
+- **Widen:** make the subject "bespoke representations to think with," with software as the strongest case. More true to what you actually do, slightly less crisp.
+- My recommendation: **keep the title and mantra about software, and use the jackets as one short "and it isn't even always software" beat.** It acknowledges the wider truth without diluting the hook. If shopping keeps growing as a theme for you, it's its own post — and it connects to the agent-payments material in your horizon call.
 
-**2. What's your actual ratio?** How many disposable things have you built, and how many survived into category two? Willison published 241. A real number from you — even "about forty, three survived" — is the most persuasive sentence available, and it's the kind of specificity your last post had.
+**2. Do you have a real piece of *personal* software?** Almost everything you've described is on-the-fly. If there's something you genuinely keep and use week after week, it should be in the post. If there isn't, that's fine — but then lean fully into software-for-once and let personal software be a short contrast rather than half the taxonomy.
 
-**3. Which of these is software, and which is an artifact?** The Chrome extension, the window tool and the kids' games are software. The mood boards are generated images — an artifact made with AI, not an app. The 3D walkthrough sits between: a model you look around, which became software when you added furniture you could move. Sloan's lineage is specifically software. Either narrow the post, or name the distinction deliberately — don't leave it for a reader to spot.
+**3. Name the on-the-fly category.** Still unclaimed. "Software for once" pairs neatly with Waxman's "software for one" — worth considering, or find your own. A named idea gets cited.
 
-**4. How would you know if the flight chart was wrong?** This is the challenge I'd most want you to sit with, because your most impressive examples are also the ones where being wrong costs the most.
+**4. What's your ratio?** Willison publishes 241. "I've built about X of these this year, and still use Y" is the most persuasive sentence available.
 
-- The flight tool parsed times across multiple zones and rendered them on a timeline. If it got a UTC offset or a day-boundary wrong, the chart would look exactly as convincing and you'd have chosen a worse flight.
-- The 3D walkthrough inferred dimensions from architects' drawings. If it misread a scale, you have photorealistic renders of a house that isn't the one being built — and you'd be making furniture and layout decisions against it.
-- Did you check either? Honest answer either way is interesting. If you did, say how — that's the most practically useful paragraph in the post. If you didn't, that's the agreement loop from your last post arriving in a new place: output that is plausible, articulate, unverified, and now load-bearing on a decision worth thousands.
-- The jagged-frontier point bites hardest here: you can't spot-check work you couldn't have done yourself. Which doesn't mean don't build these things — it means the verification question is the one the whole genre is ignoring.
+**5. Show the work.** The flight Gantt chart and the window tool with the 3D toggle are both visual and both slightly astonishing. One screenshot of each does more than a paragraph.
 
-**5. Did you already start this on your site?** You mentioned a portfolio site you were building. If there's an earlier version of this post there, worth digging out — you may already have the examples, and reconciling the two drafts is easier than starting clean.
+**6. Check the portfolio site.** You mentioned starting something like this there. Your examples may already be written up.
 
 ---
 
 ## Sources
 
-1. **[Simon Willison's tools](https://tools.simonwillison.net/)** and **[the colophon](https://tools.simonwillison.net/colophon)** — 241 single-file tools, commit history and LLM transcripts for each, "very low stakes." The evidence base for the on-the-fly half.
-2. **[Adding AI-generated descriptions to my tools collection](https://simonwillison.net/2025/Mar/13/tools-colophon/)** — the March 2025 post where the count was 78. Gives you the growth rate.
-3. **[Robin Sloan, "An app can be a home-cooked meal"](https://www.robinsloan.com/notes/home-cooked-app/)** — canonical for personal software. Four users, zero churn, sovereignty, "in a better world... in a day."
-4. **[Adam Waxman, "Software for One"](https://www.ajwaxman.com/writing/software-for-one)** — the recent AI-era version. Build times, costs, "imagination is now the limiting factor," "ephemeral is fine." Read first. Also cites Thariq and Lee Robinson, who built a baby tracker with his wife because they didn't need *"user profiles, badges, subscription tiers."*
-5. **Clay Shirky on situated software** (2004) — worth finding the original for the quote.
-6. Not yet read, worth checking: **[Ham Vocke, "Home-cooked software"](https://hamvocke.com/blog/home-cooked-software/)** — reportedly frames this as craft against the pressure to monetise, which is adjacent to your play angle.
+1. **[Bret Victor, "Explorable Explanations"](https://worrydream.com/ExplorableExplanations/)** (March 2011) — the canonical text on interactive representations as thinking tools. Reactive documents, explorable examples, "a spreadsheet without the spreadsheet," "an environment to think in." Anchors section 3.
+2. **[Simon Willison's tools](https://tools.simonwillison.net/)** and **[colophon](https://tools.simonwillison.net/colophon)** — 241 single-file tools, with the simple prompts and transcripts published. Evidence for "very little direction" and for the scale of on-the-fly building.
+3. **[Robin Sloan, "An app can be a home-cooked meal"](https://www.robinsloan.com/notes/home-cooked-app/)** (Feb 2020) — four users, zero churn; "in a better world, I would have built this in a day."
+4. **[Adam Waxman, "Software for One"](https://www.ajwaxman.com/writing/software-for-one)** (July 2026) — the AI-era personal-software post. Read first; "ephemeral is fine."
+5. **Clay Shirky on situated software** (2004), quoted by Sloan — *"it is personal from its inception."* Optional.
 
 ---
 
 ## Structural notes
 
-- **Length:** 1,100–1,400. Section 2 gets the most words; section 3 can lean on Sloan and Waxman and stay short.
-- **Weighting:** roughly 40% on-the-fly, 20% personal, 40% the distinction and what it costs you. If personal software takes more than a quarter of the post you're writing Waxman's piece.
-- **Biggest risk:** two lists with no argument. Sections 4 and 5 are the argument.
-- **Second risk:** the cost-collapse point eating the piece. Everyone writes it. One paragraph.
-- **Show the work:** a screenshot of the stupidest disposable thing you built does more than any paragraph. A table of what you built and whether it survived would do even more.
+- **Length:** 1,200–1,500. Section 3 gets the most words; 2, 5, 6 and 8 should be short.
+- **Biggest risk:** becoming a tour of cool things you built. The examples are evidence for the mantra and the see-not-do pattern — each one has to earn its place by showing something new. Flights shows the reflex. Windows shows the two-person moment. Crisis sim shows building for others. Jackets shows it isn't only software. The walkthrough and mood boards may be one example too many; pick the stronger.
+- **Second risk:** section 2 swelling. Everyone writes "AI made building cheap." One paragraph.
+- **Register:** this is your most delighted material — "it was just insane," "it's crazy." Let that show; it's the opposite energy to the keeping-up post, and it should be.
