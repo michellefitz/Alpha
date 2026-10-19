@@ -1,192 +1,185 @@
-# Outline: Personal software
+# Outline: Personal software and on-the-fly software
 
 Structure, points to hit, and supporting material. No drafted prose.
 
-> **You said "project or blog post."** I've built this as a post outline, since that's what the rest of this session has been. If you meant a *project* — an actual thing to build — say so and I'll rework it; the obvious candidate is at the bottom under "If you meant the project."
+Working titles:
+- **Two Kinds of Software Nobody Else Will Ever Use**
+- Disposable Software
+- Cheaper to Build Than to Find
+- Software for One, Software for Once
 
 ---
 
-## Read this first: someone just published the obvious version
+## The spine: your distinction is the post
 
-**[Adam Waxman, "Software for One", 28 July 2026](https://www.ajwaxman.com/writing/software-for-one)** is very close to the default version of this post. He builds personal apps with AI, lists them, gives his stack and his monthly cost, and draws conclusions. It's good and it's recent.
+The taxonomy you drew is the contribution. Everything else is support.
 
-So the post can't be "I build personal software with AI now, here's my list." That's taken, and taken well.
+| | **On-the-fly software** | **Personal software** |
+|---|---|---|
+| Solves | a moment | an ongoing need |
+| Lifespan | minutes to hours | months to years |
+| Do you name it? | no | yes |
+| Do you return to it? | no | constantly |
+| Maintenance | none — it dies before it can rot | real, but now cheap |
+| Needs hosting, auth, a database? | no | usually |
+| Decision to build | none. you just do it | deliberate |
+| Competes with | doing it by hand, or searching for a tool | paying for an app |
 
-**Your two real differentiators:**
+**Why this framing matters:** the existing writing on this is almost entirely about the right-hand column. Waxman, Sloan, Lee Robinson — all personal software. **The left-hand column is barely written about and has no accepted name.** I looked; "disposable software" and "throwaway software" aren't established terms for it. Simon Willison has built 241 of these things and calls it only *"an experiment in prompt-driven development with very low stakes."*
 
-1. **You've never handwritten code.** Waxman's stack is Next.js, Drizzle ORM, Better Auth — he's an engineer who got faster. You're someone who couldn't build software at all and now ships it. That's a completely different story and almost nobody credible is telling it.
-2. **Yours is play, his is optimisation.** His apps are a sleep tracker, a marathon plan, a nutrition calculator — personal *productivity*. Yours are collages, videos for your family, games built from your kids' ridiculous ideas, stupid features, delights. **That's a different thesis: personal software as play, not as self-improvement.**
-
-Lead with those two and the post is yours. Lead with "the cost of building collapsed" and it's a worse version of his.
+So the naming is available, and naming it is the most valuable thing this post can do. That's your lede, not a section.
 
 ---
 
-## The thesis to pick
+## The idea underneath it
 
-Three options. My recommendation is C.
+The strongest thing in your material, and worth making explicit because it explains *why* on-the-fly software is a new category rather than just small personal software:
 
-- **A. Personal software as play** — the antidote to optimising yourself. Strong, but half the story.
-- **B. Personal software for people who don't code** — strong, underserved, but risks becoming a how-to.
-- **C. Both: "I've never written code, and I build useless software for fun."** The combination is the post nobody else can write. The uselessness is the point and the non-coding is the proof of how far the floor has dropped.
+**Building became cheaper than finding.**
+
+- Old order: small problem → search for a tool → evaluate, sign up, learn its interface → use it. You searched because building cost more than searching.
+- New order: small problem → describe the outcome → use the thing → close the tab.
+- You no longer need to know a tool exists. You don't need to learn anyone's interface. The discovery step — and the learning step — disappear.
+
+And a second framing worth trying: **software stopped being a durable good.** It used to be something you acquired, installed, learned and kept. On-the-fly software is a consumable. Paper plates, not china. That's a genuine shift in what the word "software" even points at.
 
 ---
 
 ## Narrative arc
 
-### 1. Open — the most absurd thing you've built
+### 1. Open — one of each, concretely
 
-**Does:** earns attention through specificity, and sets the register as fun rather than instructive.
-
-Points to hit:
-- Open on one real, concrete, slightly ridiculous thing. A game from your kids' idea, a collage generator, whatever the silliest one is.
-- Who it's for: you, and maybe three other people.
-- How long it took.
-- The admission that reframes everything: you've never handwritten a line of code.
-
-Don't open with "AI has made building software easier." That's the sentence every version of this post opens with.
-
-### 2. The lineage — this isn't new, the cost is
-
-**Does:** gives the idea intellectual weight and stops it reading as an AI-era novelty.
+**Does:** sets up the distinction immediately through example rather than definition.
 
 Points to hit:
-- The idea has a name and a history. Software made for a handful of people, never meant to scale.
-- The canonical text is six years old; what changed is the price, not the concept.
+- One disposable thing you built to get through a specific afternoon. Name the problem, the thing, how long it took, and the fact you never opened it again.
+- One bespoke thing you still use. Name who it's for and how long you've had it.
+- Then the claim: these are two different activities that get talked about as one, and the first one barely gets talked about at all.
+- Your qualifier, early: you've never handwritten code.
+
+Don't open by defining the categories. Open with the two examples and let the distinction land on its own.
+
+### 2. On-the-fly software
+
+**Does:** the under-written half. Give it the most room — this is where the post is original.
+
+Points to hit:
+- You have something to do. You build a micro-app, an artifact, a small site. You solve the thing. You close it.
+- No name, no repo, no deployment, no maintenance, no second visit.
+- Why it's not just "a small app": the decision to build never happens. There's no evaluation, no "is this worth building." You just do it, the way you'd open a notes file.
+- **Cheaper to build than to find.** Spell this out — it's the mechanism.
+- What disappears: discovery, sign-up, learning curve, lock-in, sunk cost, subscription.
+- The weird part worth dwelling on: it's software with no future. Normally that's a failure. Here it's the design.
 
 Substance:
-- **[Robin Sloan, "An app can be a home-cooked meal", February 2020](https://www.robinsloan.com/notes/home-cooked-app/)** — the essay to cite, and it's beautiful. He built **BoopSnoop**, a messaging app for his family, after the app they used shut down.
+- **[Simon Willison's tools collection](https://tools.simonwillison.net/)** is the best evidence anyone is doing this at scale. **241 tools** as of now, up from 78 in March 2025. Each one a **self-contained single HTML file** — inline CSS and JS, no build system, no bundler, no shared framework.
+- His own framing: *"an experiment in prompt-driven development with very low stakes."*
+- The detail that makes it citable rather than anecdotal: **[the colophon](https://tools.simonwillison.net/colophon)** publishes commit messages and LLM transcripts for every single tool. He shows the receipts.
+- Note the tell in his own numbers: 78 → 241 in about eighteen months. The rate is the argument.
+
+### 3. Personal software
+
+**Does:** the better-documented half. Can be shorter because you can lean on existing work.
+
+Points to hit:
+- Bespoke, built for you, used repeatedly, never shared and never meant to be.
+- Different relationship: you maintain it, you add to it, it accumulates.
+- Why you'd build rather than subscribe — it fits you exactly, and nothing about it will change under you.
+
+Substance:
+- **[Robin Sloan, "An app can be a home-cooked meal", Feb 2020](https://www.robinsloan.com/notes/home-cooked-app/)** — the canonical text. BoopSnoop, a messaging app for his family.
   - *"It launched in the first week of January 2020, and almost immediately, it was downloaded by four people in three different time zones. In the years since, it has remained steady at four daily active users, with zero churn: a resounding success, exceeding every one of its creator's expectations."*
-  - *"I made a messaging app for, and with, my family. It is ruthlessly simple; we love it; no one else will ever use it."*
-  - Why he didn't just use WhatsApp: the prospect of *"having our warm channel surrounded — encroached upon — by all that other garbage."*
-  - On sovereignty: *"There will be no sudden redesign, no flood of ads, no pivot to chase a userbase inscrutable to us."*
-  - The line that dates it, and sets up your section 3: *"In a better world, I would have built this in a day, using some kind of modern, flexible HyperCard for iOS."* He built it in a week; **half the time went on code-signing and provisioning.**
-  - He distributes it via TestFlight and leaves it there — *"a cozy, eternal beta."*
-- **The deeper ancestor:** Sloan quotes Clay Shirky on **situated software** — *"Situated software, by contrast, doesn't need to be personalized — it is personal from its inception."* Worth using; it's a sharper formulation than "personal software" and it's from 2004.
+  - *"It is ruthlessly simple; we love it; no one else will ever use it."*
+  - Why not WhatsApp: *"having our warm channel surrounded — encroached upon — by all that other garbage."*
+  - The sovereignty line: *"There will be no sudden redesign, no flood of ads, no pivot to chase a userbase inscrutable to us."*
+  - And the line that dates it: *"In a better world, I would have built this in a day, using some kind of modern, flexible HyperCard for iOS."* A week in practice, **half of it on code-signing and provisioning.**
+- **Clay Shirky on situated software**, quoted by Sloan: *"Situated software, by contrast, doesn't need to be personalized — it is personal from its inception."* 2004. Sharper than "personal," and useful if you want a word for the right-hand column.
+- **[Adam Waxman, "Software for One", 28 July 2026](https://www.ajwaxman.com/writing/software-for-one)** — the AI-era update, and **read it before you write.** His sleep app took a week of evenings, his fitness app a weekend, his jazz quiz a single evening. *"Imagination is now the limiting factor."* On maintenance: *"9/10 times a feedback screenshot shared with Claude gets the job done."* Cost ~$160/month, mostly a subscription he'd keep anyway.
+  - ⚠️ **He has already written the default version of the right-hand column.** Which is another reason to lead with on-the-fly software and the distinction. Don't compete with him on his own ground.
 
-### 3. What actually changed
+### 4. Why the distinction matters
 
-**Does:** the hinge. Keep it short — it's the part everyone else writes.
-
-Points to hit:
-- Sloan's "in a better world, in a day" is now just... the case.
-- The barrier was never the idea. It was the week of fighting toolchains for something only four people would use. That maths never worked.
-- Now it does, and the constraint moved somewhere else entirely.
-
-Substance:
-- **Waxman's numbers** are the cleanest illustration: sleep app = a week of evenings, fitness app = a weekend, jazz quiz = **a single evening after the kids went to bed.**
-- His line, and it's the one to quote: **"Imagination is now the limiting factor."**
-- On cost: ~$160/month for him, mostly a Claude subscription he'd keep anyway; he reckons one or two apps runs ~$20/month plus a few dollars of API.
-- On maintenance — the thing people assume kills personal software: *"9/10 times a feedback screenshot shared with Claude gets the job done."* Set against Sloan's running gag in his yearly updates — *"I have added one (1) feature, at my mother's request"* — because each change meant another fight with Xcode.
-- Also his: **"ephemeral is fine."** He used the sleep app four months, then retired it when his son started sleeping through. Cheap to build means fine to throw away.
-
-### 4. The case for useless software
-
-**Does:** your differentiator. This is the section that makes it your post. Give it the most room.
+**Does:** justifies the taxonomy. Short, but it needs to be here or the post is just two lists.
 
 Points to hit:
-- Almost all the writing about personal software is about **optimising your life** — sleep, training, nutrition, medical records. Useful, and a bit joyless.
-- You're arguing for the opposite: build things with no utility at all.
-- The list, kept concrete: image collages and collections, videos from family photos for people in your family to enjoy, games with your kids built from their mad ideas, something for a hobby you actually have.
-- Ridiculous requests, stupid features, delights. No audience, no stakes, no metrics.
-- The thing being defended: software that nobody would ever fund, that solves no problem, that exists because it was fun to make.
-- Worth landing: **four daily active users is a resounding success.** Sloan said it first and it's still the most radical sentence in this whole area.
+- They have different failure modes. Personal software rots — it needs maintaining. On-the-fly software can't rot, because it's gone.
+- They have different economics. One replaces a subscription. The other replaces a search.
+- They need different tools. A disposable artifact wants zero setup. A kept app wants somewhere to live, data that persists, maybe auth.
+- And the practical point for a reader: **knowing which one you're making stops you over-building.** Most of the pain comes from building a disposable thing as though it has to last.
 
-### 5. Why play is where you actually learn
+That last point is the useful takeaway. It's the thing a reader can act on tomorrow.
 
-**Does:** the argument that lifts it above "do fun stuff." Also the bridge to the keeping-up post.
+### 5. What you lose
 
-Points to hit:
-- On real work you use what you already know works, because there's a deadline. You don't experiment when something's at stake.
-- So a low-stakes project is the **only** place you'll actually try the new thing, push past where you'd normally stop, or find out what a model is bad at.
-- Which means play isn't the reward for keeping up — it's the mechanism.
-- Your own calibration problem connects here: you can't tell what's hard because you've never done the work. Play is where you'd find out, cheaply, with nothing riding on it.
-- Protect it from justification: the moment play has to pay rent in work terms, it stops being play. The bleed-over into work is a **side effect**, not the reason. You said this yourself — keep it that way on the page.
-
-Substance:
-- Bowne-Anderson and Wiecki's ~10 hours interviewing **16 builders they trust** about what they actually use: the recurring answers were *"verification, memory, review, personal software, and workflow design"* — **"much less swarms, autonomous loops, or agent frameworks."* Personal software sits in the list of what serious builders actually do. That's useful cover for a post arguing you should go and make something silly.
-
-### 6. The PRD ritual
-
-**Does:** your best concrete artifact. Short section, high value.
+**Does:** stops the post being an advert. This is the section that makes it credible, and it's where your previous post connects.
 
 Points to hit:
-- You keep a standing PRD. When a new model lands you throw it at the new one and see what comes back.
-- One prompt. No setup. A personal benchmark.
-- What it gives you that reading reviews doesn't: you **feel** the difference on work you understand, instead of taking someone's word for it.
-- It's also the cheapest possible answer to "how do I keep up" — which is why it belongs in both posts.
+- **Nothing compounds.** Build it, bin it, build it again. You don't accumulate tools and you don't get better at any one of them.
+- **You never learn the good tool exists.** You build your own mediocre version instead of finding the excellent one someone spent years on. The discovery step you skipped was also doing you a favour.
+- **Verification.** You use a disposable thing once and trust its output. Did it actually compute the right answer? With a spreadsheet you'd sanity-check. With a one-off app you often don't — and it looks finished either way.
+- That last one is the agreement loop from your previous post, in a new place: output that's plausible, articulate, and unchecked. Worth one explicit line linking back.
+- The jagged-frontier point applies too: you can't tell whether a small app got it right, because you couldn't have built it yourself.
 
-### 7. Sovereignty and impermanence
+This section is the most original *critical* thing you'd be saying. Nobody writing about this is writing about the verification risk.
 
-**Does:** the quieter, more serious note. Keeps the post from being all whimsy.
+### 6. The useless half
 
-Points to hit:
-- Nobody can redesign it, monetise it, fill it with ads, or shut it down. Sloan's point, and it's aged extremely well.
-- Your family's favourite feature stays as long as they want it.
-- And the inverse: it's fine for these things to die. Cheap to build means no sunk cost. Use it for four months and bin it.
-- The thing worth noticing: software stopped having to be permanent to be worth making.
-
-### 8. How to start
-
-**Does:** gives the reader the next action. Keep it short — this is a nudge, not a tutorial.
+**Does:** your warmest material, and the differentiator from Waxman.
 
 Points to hit:
-- Pick something from your actual life: a hobby, a sport, a collection, your kids.
-- Don't solve a problem. Make a thing you'd enjoy.
-- Nobody else has to like it. Don't show it to anyone if you don't want to.
-- Expect it to be bad and build it anyway.
-- Note the cheap routes for non-coders — Claude Artifacts and similar get you a working thing without touching a terminal. Waxman names those explicitly as the less technical path.
+- Most writing about personal software is about optimising your life — sleep, training, nutrition. Useful and a bit joyless.
+- The other use is play: collages and collections, videos from family photos, games built from your kids' ridiculous ideas, something for a hobby.
+- Ridiculous requests, stupid features, delights. No audience, no metrics.
+- The radical version, and Sloan said it first: **four daily active users is a resounding success.**
 
-### 9. Close
+### 7. Why play is where you learn
+
+**Does:** the bridge to the keeping-up post. Keep it to a few lines so it doesn't take over.
+
+Points to hit:
+- On real work you use what you know works, because there's a deadline. You don't experiment with something at stake.
+- A low-stakes project is the only place you'll push past where you'd normally stop, or find out what a model is bad at.
+- Your PRD ritual belongs here: a standing PRD you throw at each new model. One prompt, and you *feel* the difference instead of reading someone's review.
+- Protect it from justification — the bleed-over into work is a side effect, not the reason. Once play has to pay rent, it stops working.
+
+### 8. Close
 
 Points to land:
-- The economics of software changed: things that could never justify being built now can be.
-- What that unlocks isn't mainly productivity. It's the return of making things for the people near you.
-- Four users, zero churn. Don't tie a bow.
+- Two things got cheap at once: building something to keep, and building something to throw away.
+- The second is the stranger shift and the less noticed one.
+- Don't tie a bow.
 
 ---
 
 ## Challenges
 
-**1. What's yours that Waxman's isn't?** Answer it on the page in the first few paragraphs, or the post reads derivative however good it is. The answer is the non-coder angle and play-over-optimisation — but you have to say it, not imply it.
+**1. Name the on-the-fly category.** This is the single highest-value thing in the post and it's currently unclaimed. "Disposable software," "software for once," "one-afternoon software" — whatever you land on, commit to it in the title or the first paragraph. A named idea gets cited; an observed one doesn't.
 
-**2. Is what you make actually *software*?** A collage or a video made from family photos isn't an app — it's an artifact made with AI. A game your kids play is software. That's a real fork and it changes the post: "personal software" and "making things with AI for fun" are different arguments with different lineages. Sloan is about software. Pick one, or name the distinction deliberately.
+**2. What's your actual ratio?** How many disposable things have you built, and how many survived into category two? Willison published 241. A real number from you — even "about forty, three survived" — is the most persuasive sentence available, and it's the kind of specificity your last post had.
 
-**3. Do any of yours survive?** Sloan's app ran for years. Waxman retired his after four months and argues that's fine. Which are yours — tools you keep, or toys you abandon? Both are defensible, and the honest answer is more interesting than the flattering one. If nothing you build survives a fortnight, that's worth saying and examining rather than hiding.
+**3. Are the collages and family videos actually software?** A collage made with AI is an artifact, not an app. A game your kids play is software. Sloan's lineage is specifically software. This is a genuine fork: either narrow the post to things that are software, or name the third category deliberately. Don't let it sit unresolved — a reader will notice.
 
-**4. How much does it actually cost you?** Waxman published his number. One of the strongest things you could do is publish yours — especially as a non-coder, because the assumed barrier is money as well as skill.
+**4. Does the verification risk apply to you?** Section 5 is strongest if you can give a case where a disposable tool gave you a confidently wrong answer and you nearly used it. If that's never happened, say so, but then ask on the page how you'd know.
 
-**5. Will you show the work?** This post is much better with screenshots or clips of the actual things. The silliest one does more persuading than any paragraph.
+**5. Did you already start this on your site?** You mentioned a portfolio site you were building. If there's an earlier version of this post there, worth digging out — you may already have the examples, and reconciling the two drafts is easier than starting clean.
 
 ---
 
 ## Sources
 
-1. **[Robin Sloan, "An app can be a home-cooked meal"](https://www.robinsloan.com/notes/home-cooked-app/)** (Feb 2020) — the canonical essay. Four users, zero churn; the sovereignty argument; "in a better world, I would have built this in a day."
-2. **[Adam Waxman, "Software for One"](https://www.ajwaxman.com/writing/software-for-one)** (28 July 2026) — the AI-era update. Build times, costs, stack, "imagination is now the limiting factor," "ephemeral is fine." **Read it before you write.** Also cites Thariq on X — *"personal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter"* — and Lee Robinson, who built a baby tracker with his wife because they didn't need *"user profiles, badges, subscription tiers, or any other extra features."*
-3. **Clay Shirky on situated software** (2004) — *"Situated software, by contrast, doesn't need to be personalized — it is personal from its inception."* Quoted in Sloan; worth finding the original.
-4. **[Hugo Bowne-Anderson, "Forget Agent Skills"](https://hugobowne.substack.com/p/forget-agent-skills)** — the 16-builder finding that puts personal software in the list of what serious practitioners actually focus on.
-5. Worth a look, not yet read: **[Ham Vocke, "Home-cooked software"](https://hamvocke.com/blog/home-cooked-software/)** frames it as building for love of the craft against the pressure to monetise — closest existing piece to your play angle, so check whether it already makes your argument.
+1. **[Simon Willison's tools](https://tools.simonwillison.net/)** and **[the colophon](https://tools.simonwillison.net/colophon)** — 241 single-file tools, commit history and LLM transcripts for each, "very low stakes." The evidence base for the on-the-fly half.
+2. **[Adding AI-generated descriptions to my tools collection](https://simonwillison.net/2025/Mar/13/tools-colophon/)** — the March 2025 post where the count was 78. Gives you the growth rate.
+3. **[Robin Sloan, "An app can be a home-cooked meal"](https://www.robinsloan.com/notes/home-cooked-app/)** — canonical for personal software. Four users, zero churn, sovereignty, "in a better world... in a day."
+4. **[Adam Waxman, "Software for One"](https://www.ajwaxman.com/writing/software-for-one)** — the recent AI-era version. Build times, costs, "imagination is now the limiting factor," "ephemeral is fine." Read first. Also cites Thariq and Lee Robinson, who built a baby tracker with his wife because they didn't need *"user profiles, badges, subscription tiers."*
+5. **Clay Shirky on situated software** (2004) — worth finding the original for the quote.
+6. Not yet read, worth checking: **[Ham Vocke, "Home-cooked software"](https://hamvocke.com/blog/home-cooked-software/)** — reportedly frames this as craft against the pressure to monetise, which is adjacent to your play angle.
 
 ---
 
 ## Structural notes
 
-- **Length:** 1,000–1,300. Shorter than the keeping-up post. This one is a nudge, and nudges should be brisk.
-- **Register:** this is your warmest material. Let it be light. The two serious sections (5 and 7) are what stop it being fluff — don't add a third.
-- **Biggest risk:** becoming a listicle of things you built, or a tutorial. Sections 4 and 5 are the argument; the list is evidence.
-- **Second risk:** the cost-collapse section eating the post. Everyone writes that. Keep section 3 short.
-- **Show, don't list:** one screenshot or clip of the stupidest thing you've made is worth three paragraphs.
-
----
-
-## If you meant the project
-
-The obvious candidate, and it's a good one: **build the PRD experiment into a public artifact.** Publish the standing PRD, run it through four or five current models, and show what each produced — side by side, with your notes on where they differed.
-
-Why it's the right project:
-- It's the worked example you've been complaining nobody publishes. You'd be filling the gap you identified rather than just naming it.
-- It doubles as evidence for the "models differ in kind, not degree" argument in the guidance post.
-- It's repeatable — rerun it on each release and it becomes a series.
-- It's the most linkable thing in all three posts.
-
-Say the word and I'll outline that instead.
+- **Length:** 1,100–1,400. Section 2 gets the most words; section 3 can lean on Sloan and Waxman and stay short.
+- **Weighting:** roughly 40% on-the-fly, 20% personal, 40% the distinction and what it costs you. If personal software takes more than a quarter of the post you're writing Waxman's piece.
+- **Biggest risk:** two lists with no argument. Sections 4 and 5 are the argument.
+- **Second risk:** the cost-collapse point eating the piece. Everyone writes it. One paragraph.
+- **Show the work:** a screenshot of the stupidest disposable thing you built does more than any paragraph. A table of what you built and whether it survived would do even more.
