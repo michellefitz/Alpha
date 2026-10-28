@@ -177,7 +177,7 @@ Substance available — a proper peer-reviewed field experiment, and it's excell
   - The finding that matters to you: the frontier is **jagged and invisible**. Experienced professionals, in their own domain, could not tell which side of it a task fell on — and over-relied on the output as a result.
 - So: highly experienced consultants couldn't see the frontier in their own field. Your inability to judge coding difficulty isn't because you don't code. **Nobody can see it.** That's a much more generous — and more accurate — framing than the one you've been carrying.
 - Dianne Penn uses **"the jagged edge"** in her episode title; Mollick's group coined "jagged frontier" in this paper. Worth using the term and citing the study.
-- Callback: this is the cognitive-debt point from your last post, one level up — not "can you explain the answer" but "can you judge the question."
+- Related idea: cognitive debt — not "can you explain the answer" but "can you judge the question." The MIT study behind it ([Your Brain on ChatGPT](https://www.media.mit.edu/publications/your-brain-on-chatgpt/)) was only in the archived agreement-loop post, so cite it directly here if you want it rather than as a callback.
 
 Papers: [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4573321) · [free PDF via MIT Sloan](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf) · [Organization Science](https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838)
 
@@ -206,7 +206,7 @@ Substance available — and this is what stops "find the joy" being dismissed as
 Points to land:
 - You will always be slightly behind. That's the permanent condition, not a phase.
 - The choice isn't whether to keep up. It's what you point your attention at, and whether the moving ground reads as threat or as interesting.
-- Don't tie a bow — your last post closed on a question and was stronger for it.
+- Don't tie a bow — *When Did You Last Disagree With AI?* closes on a question and is stronger for it.
 
 ---
 
@@ -221,7 +221,7 @@ Points to land:
 7. "I overdid it with skills — like when you got an iPhone at the start and downloaded every app you saw."
 8. "So much of their output just talks about abstract concepts without giving you practical examples."
 
-**Swearing:** your last post has none and the restraint is why it reads as considered. This piece is warmer and more generous than the transcript; profanity would fight the ending. One at most, early, where frustration sets up the relief.
+**Swearing:** *When Did You Last Disagree With AI?* has none and the restraint is why it reads as considered. This piece is warmer and more generous than the transcript; profanity would fight the ending. One at most, early, where frustration sets up the relief.
 
 ---
 
@@ -241,9 +241,9 @@ Points to land:
 
 **Core:**
 
-1. **[How tech workers are feeling in 2026: a workforce splitting in two](https://www.lennysnewsletter.com/p/how-tech-workers-are-feeling-in-2026)** — Segal & Rachitsky, 7 July 2026, deliberately free. All survey numbers above. Thousands of respondents across product, engineering, design, research, data, marketing, sales. This meets the citation standard of your last post and replaces the junk "half-life of skills" stat.
+1. **[How tech workers are feeling in 2026: a workforce splitting in two](https://www.lennysnewsletter.com/p/how-tech-workers-are-feeling-in-2026)** — Segal & Rachitsky, 7 July 2026, deliberately free. All survey numbers above. Thousands of respondents across product, engineering, design, research, data, marketing, sales. This meets the citation standard of your other posts and replaces the junk "half-life of skills" stat.
 2. **[The Noam Segal episode](https://www.lennysnewsletter.com/p/how-tech-workers-actually-feel-about)**, 12 July 2026 — the survey conversation. ⚠️ Separate from the Penn episode; you'd remembered them as one.
-3. **[Dianne Penn on Lenny's Podcast](https://www.lennysnewsletter.com/p/anthropics-first-technical-pm-on)**, 26 July 2026 — "token maxing, the jagged edge, and living in the future." Joy chapter verified. Also covers why Claude's willingness to push back matters — a direct callback to your last post.
+3. **[Dianne Penn on Lenny's Podcast](https://www.lennysnewsletter.com/p/anthropics-first-technical-pm-on)**, 26 July 2026 — "token maxing, the jagged edge, and living in the future." Joy chapter verified. Also covers why Claude's willingness to push back matters — a direct callback to *When Did You Last Disagree With AI?*
 4. **[Dell'Acqua et al., Navigating the Jagged Technological Frontier](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf)** — 758 consultants, peer-reviewed, the 12.2% / 25.1% / −19% numbers. The evidence that nobody can see the frontier.
 5. **Jack Clark on capability overhang** — [the original quote](https://simonwillison.net/2023/Mar/22/jack-clark/), and [Import AI](https://jack-clark.net/) for later returns to it. Grounds section 4.
 

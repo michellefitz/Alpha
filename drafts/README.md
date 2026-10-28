@@ -7,8 +7,7 @@ Every blog post in progress, its status, and what it needs next.
 | # | Post | File | Words | Needs |
 |---|---|---|---|---|
 | 1 | **The Product Overhang** | `product-overhang.md` | ~800 | One concrete example (a product that shipped fast and landed on nobody, or a deal that stalled on training and sign-off) |
-| 2 | **Think With Me Not For Me** | `agreement-loop.md` | ~1,500 | Decide between this and #3 |
-| 3 | **When Did You Last Disagree With AI?** | `stopped-checking.md` | ~1,200 | Decide between this and #2 |
+| 3 | **When Did You Last Disagree With AI?** | `stopped-checking.md` | ~1,200 | Write the new personal-agents examples (notes in the draft, marked TO WRITE) |
 | 4 | **Faster Than the Meeting** | `faster-than-the-meeting.md` | ~2,100 | Superseded by #5 and #7. Treat as prose to borrow from, not a post to publish |
 
 ## Outlines
@@ -22,13 +21,16 @@ Every blog post in progress, its status, and what it needs next.
 | 9 | **Choices Without Guidance** — model pickers and effort sliders with no advice | `outline-choices-without-guidance.md` | Complete outline. Ready to write |
 | 10 | **Could I Build Something for This?** — software to see a problem, not to do a task | `outline-personal-software.md` | Complete outline. Ready to write |
 
+## Archived
+
+**Think With Me Not For Me** (`archive/agreement-loop.md`). The earlier, more researched version of #3. Archived in favour of #3; the agreement loop survives there in a few lines. Its MIT cognitive-debt study isn't in #3, so cite it directly if another post needs it.
+
 ## Project
 
 **Newsdesk** (`newsdesk-design.md` and `../newsdesk/`). A personal AI-news system built in 14 steps, each teaching one agent feature, plus a setup tool for other people. The brief, edition command, workflow and automatic checks exist. The plan is to run it for a week before writing about it.
 
 ## Overlaps to resolve
 
-- **#2 and #3 are the same post.** Publish one. #3 is newer; #2 has more research.
 - **The "could I build software to solve this?" mantra** opens #4, #7 and #10. Pick one home.
 - **#7 and #10 overlap heavily**, and both use the flight tool. Merge them, or split cleanly: #7 is what building taught you, #10 is what you build.
 - **The house 3D model, mood boards and jacket examples** appear in #3 and #10.
@@ -38,5 +40,5 @@ Every blog post in progress, its status, and what it needs next.
 ## Suggested order
 
 1. **#1 The Product Overhang**: done, short, stands alone.
-2. **#2 or #3**, whichever you pick.
+2. **#3 When Did You Last Disagree With AI?**, once the personal-agents section is in.
 3. **#5 Product management**, built from #4.

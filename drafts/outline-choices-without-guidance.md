@@ -51,7 +51,7 @@ The axes that genuinely differ between models (durable; unlike a rankings table 
 - **Tokens consumed per task** — separate from price per token, and often the bigger cost driver. A cheaper model that flails is more expensive.
 - **Training lineage** — different families have different blind spots. This is *why* a second opinion from another lab beats a second pass from the same one.
 - **Voice** — writing style and register, which barely shows up in benchmarks and matters enormously if you write.
-- **Willingness to push back** — directly relevant to your last post's agreement loop.
+- **Willingness to push back** — directly relevant to *When Did You Last Disagree With AI?* (`stopped-checking.md`).
 
 ⚠️ **Honest note on the list you asked me for.** I've given you the *axes* rather than a "model X is best at Y" table, deliberately. Any such table is stale within weeks, contested while it's current, and — the real point — **the reliable, current, task-specific version of it does not exist.** That absence is your thesis. If I'd handed you a confident rankings list, I'd have been doing the thing this post criticises: producing plausible guidance with nothing solid underneath. Worth saying in the piece itself: *I went looking for the list. There isn't one.*
 

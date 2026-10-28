@@ -145,7 +145,7 @@ Points to hit:
 - That gives you a usable principle: **how much you need to verify scales with how much weight the output carries.** A thinking aid that sits alongside your own judgement needs less checking than a tool that's the only input.
 - Where it would matter: if a tool becomes the *sole* basis for something expensive. The flight chart is fine as one view of fifty options; it would be risky as the only thing you looked at.
 - The second honest point: **the barrier that fell was implementation, not taste.** You knew flights wanted a timeline, mood boards wanted reference examples, the window tool needed a 3D toggle. That's product judgement, and it's doing more of the work than "very little direction" suggests. Readers with no sense of what good looks like will get slop, and should know it.
-- One line back to your agreement-loop post works here: the risk is plausible, articulate output that quietly becomes load-bearing.
+- One line back to *When Did You Last Disagree With AI?* works here: the risk is plausible, articulate output that quietly becomes load-bearing.
 
 Your raw material:
 > "Using them to think through stuff more than being the only input into the decision."

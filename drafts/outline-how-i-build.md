@@ -22,8 +22,8 @@ Five beats:
 5. **The muscle I didn't expect** — pushing back, and only catching it in the code
 
 The turn to aim for: this looks like a post about *making things*. It ends up
-being a post about **judgement** — which is the same place your agreement-loop
-post landed, arrived at from a completely different direction.
+being a post about **judgement** — which is the same place *When Did You Last Disagree With AI?*
+landed, arrived at from a completely different direction.
 
 ---
 
@@ -148,7 +148,7 @@ The post opens as a story about building lots of silly things and ends on the
 thing that's actually transferable: the AI is making product decisions inside
 work you didn't inspect, and the only way you find out is by going and looking.
 
-That's the same conclusion as your agreement-loop post, reached from the opposite
+That's the same conclusion as *When Did You Last Disagree With AI?*, reached from the opposite
 end — that one argued it from psychology and research, this one earns it from a
 wine-logging app. You can nod to that post here, or leave the rhyme unspoken.
 

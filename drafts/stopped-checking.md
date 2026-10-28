@@ -44,6 +44,42 @@ I've only just started using them, and it's very early — weeks, really. Mostly
 
 Today I got mine to go through my inbox and unsubscribe from everything I haven't been opening. Someone had suggested it and I thought, oh yeah, I should do that. It worked, and straight away I was thinking, okay, what else can I get it to look at in there?
 
+> **[TO WRITE — your words. Notes, not prose. Delete this block when done.]**
+>
+> **Where:** here, between the inbox paragraph and "Same pattern again." Your new examples are about booking and choosing, which is exactly what the next paragraph says is "much closer to home".
+>
+> **The format:**
+> - Personal agents through WhatsApp. It feels like texting a friend, a concierge in your pocket.
+> - It answers the way you like, in the tone you like. It reacts to your voice notes with emoji, goes off, and comes back with a list.
+> - Why this matters for *this* post: it's the far end of "everything is built to help you agree". A "recommended" label is a nudge. A friend texting you back is trust.
+>
+> **Where it went wrong, two examples:**
+> - Travelling: it said you could buy museum tickets on the door. You couldn't. It was booked out.
+> - Restaurants: delivered like an insider's tip. Actually just the most popular places, and fairly touristy.
+>
+> **The diagnosis:**
+> - It isn't hallucinating. It's *slightly off*: out-of-date sources, the most popular sources.
+> - Underneath it's the same as every other AI. It's only as good as the information it can reach.
+> - What's missing is the human step. A real assistant booking something would look again, double-check, maybe call.
+>
+> **Why it's hard to catch — tie it back to what's already in the post:**
+> - The opening says you can't remember your last hallucination. This is why: **the errors moved from obviously wrong to slightly off**, and slightly off delivered confidently, in a friendly format, is much harder to spot.
+> - These are your "just asking" requests from earlier in the post. You don't know what the right answer looks like, so there's no eval in your head to catch it.
+>
+> **Bridge to the next paragraphs (thumb on the scales):** today the skew is towards whatever's popular and whatever's out of date. It doesn't need anyone's bad intent to steer you, and that's before anyone pays for the steering.
+>
+> **Possible landing:** you have to be more savvy than ever about what you actually want.
+>
+> **Your raw quotes:**
+> - "It feels like texting a friend."
+> - "It really does feel like I have a concierge in my pocket."
+> - "It speaks with a lot of confidence, and because of the format, it's very, very believable, very, very easy to trust."
+> - "As though it was a real insider. But all it did was pull the top most popular restaurants."
+> - "Not that it's hallucinating — it's just slightly off."
+> - "You have to be more savvy than ever about what it is you actually want."
+>
+> **Check:** product names as transcribed were "Instinct" and "a Grokbot". Confirm them before naming either. Also, "that's always going to be correct" read as "that's *not* always going to be correct".
+
 Same pattern again. And I don't want to overclaim here, because nobody really knows where this goes yet. But a recommendation that changes what you cancel, or buy, or book, is a different thing from a recommendation about your work. It's much closer to home, and it doesn't get weighed up. It just gets done.
 
 And that's the bit I can't put down. We all assume these things are impartial. They're working from what they know, telling us what they found. Today that's probably mostly true. But a few hundred million people who've stopped questioning the recommendation is worth an enormous amount to anyone with something to sell, and honestly, I don't think we'd notice if somebody had their thumb on the scales. There's a [controlled study](https://www.science.org/doi/10.1126/sciadv.adw5578) where people writing alongside a biased AI shifted their own opinions towards the bias — and they still did it after they'd been told the bias was there.
