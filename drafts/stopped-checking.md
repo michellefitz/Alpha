@@ -46,39 +46,79 @@ Today I got mine to go through my inbox and unsubscribe from everything I haven'
 
 > **[TO WRITE — your words. Notes, not prose. Delete this block when done.]**
 >
-> **Where:** here, between the inbox paragraph and "Same pattern again." Your new examples are about booking and choosing, which is exactly what the next paragraph says is "much closer to home".
+> **Where:** here, between the inbox paragraph and "Same pattern again." Lead with the form factor, then use the museum and restaurant examples as what it costs you.
 >
-> **The format:**
-> - Personal agents through WhatsApp. It feels like texting a friend, a concierge in your pocket.
-> - It answers the way you like, in the tone you like. It reacts to your voice notes with emoji, goes off, and comes back with a list.
-> - Why this matters for *this* post: it's the far end of "everything is built to help you agree". A "recommended" label is a nudge. A friend texting you back is trust.
+> ---
 >
-> **Where it went wrong, two examples:**
-> - Travelling: it said you could buy museum tickets on the door. You couldn't. It was booked out.
-> - Restaurants: delivered like an insider's tip. Actually just the most popular places, and fairly touristy.
+> **1. The form factor — the centre of this section**
 >
-> **The diagnosis:**
-> - It isn't hallucinating. It's *slightly off*: out-of-date sources, the most popular sources.
-> - Underneath it's the same as every other AI. It's only as good as the information it can reach.
-> - What's missing is the human step. A real assistant booking something would look again, double-check, maybe call.
+> Points to hit:
+> - Same kind of model as ChatGPT or Claude underneath. Completely different feel, because of *where* it lives.
+> - In WhatsApp it sits between messages from your friends and family. It's in the place where your personal life already is.
+> - It has adopted the patterns of how friends talk: voice notes, the little headphones icon when it listens to yours, emoji reactions, a casual, positive tone. Sending it a voice note feels like sending a friend one.
+> - It blends in. And what it says is good — not crazy, not way off — so nothing breaks the spell.
+> - Tie it to your earlier section, "Everything is built to help you agree": this is the far end of it. A "recommended" label is a nudge. A friend texting you back is trust.
+> - Contrast: business accounts on WhatsApp never felt like this, and nor did the Messenger bots of a decade ago. Same place, wrong voice.
+> - The honest confession: you keep going back to it, on instinct, even after it's been wrong — and it makes no sense to you that you still trust it.
 >
-> **Why it's hard to catch — tie it back to what's already in the post:**
-> - The opening says you can't remember your last hallucination. This is why: **the errors moved from obviously wrong to slightly off**, and slightly off delivered confidently, in a friendly format, is much harder to spot.
-> - These are your "just asking" requests from earlier in the post. You don't know what the right answer looks like, so there's no eval in your head to catch it.
+> Why it works on you even when you know better:
+> - **Computers Are Social Actors.** Clifford Nass and Byron Reeves showed in the 1990s that people apply social rules to computers without deciding to — the book is *The Media Equation* (1996), from the 1994 "Computers are social actors" paper. The classic finding: people were polite back to "polite" computers, *even when they said computers didn't deserve social treatment.* That's your "it makes no sense how I still trust it", explained thirty years early.
+> - **Tool to entity.** A recent paper argues that once an agent has a name, a phone number, a place in your contacts and a persistent personality, users stop treating it as a tool they operate and start relating to it as a social entity — and that this shift happens *"independently of model capability."* Their opening line is your point exactly: *"As AI agents acquire names, avatars, phone numbers, and persistent personalities, they increasingly inhabit the same messaging platforms and group conversations as the humans they serve, crossing from tools their users operate into social entities their users relate to."* (Borges & Gill, ["The Tool-to-Entity Threshold"](https://arxiv.org/abs/2608.13586), Aug 2026.) ⚠️ Preprint, and preliminary: one author's own agent in WhatsApp and Signal over two months, plus twelve interviews. Fine to cite as an idea; don't present it as settled.
+> - **Small cues do real work.** In a 2018 experiment, a chatbot that paused before replying — the way a person would — was rated more human and more socially present, and people were more satisfied with it, than one that replied instantly. Response time works as a social cue. (Gnewuch, Morana, Adam & Maedche, ["Faster Is Not Always Better"](https://aisel.aisnet.org/ecis2018_rp/113/), ECIS 2018.) The headphones icon, the emoji reaction and the voice note are the same kind of cue.
 >
-> **Bridge to the next paragraphs (thumb on the scales):** today the skew is towards whatever's popular and whatever's out of date. It doesn't need anyone's bad intent to steer you, and that's before anyone pays for the steering.
->
-> **Possible landing:** you have to be more savvy than ever about what you actually want.
->
-> **Your raw quotes:**
+> Your raw quotes:
 > - "It feels like texting a friend."
 > - "It really does feel like I have a concierge in my pocket."
+> - "There's something about having it in the place where your personal messages are."
+> - "They've adopted all of the patterns of how friends talk."
+> - "It's believable in a way that messaging business accounts never quite felt."
+> - "Even despite some of the errors, I'm still going back and using it on instinct. It makes no sense to me, honestly, how I still trust it."
+>
+> ---
+>
+> **2. What it costs you — the two examples**
+>
+> - Travelling: it said you could buy museum tickets on the door. You couldn't. It was booked out.
+> - Restaurants: delivered like an insider's tip. Actually just the most popular places, and fairly touristy.
+> - The diagnosis: it isn't hallucinating, it's *slightly off* — out-of-date sources, the most popular sources. Underneath it's the same as every other AI: only as good as the information it can reach.
+> - What's missing is the human step. A real assistant booking something would look again, double-check, maybe call.
+>
+> Your raw quotes:
 > - "It speaks with a lot of confidence, and because of the format, it's very, very believable, very, very easy to trust."
 > - "As though it was a real insider. But all it did was pull the top most popular restaurants."
 > - "Not that it's hallucinating — it's just slightly off."
-> - "You have to be more savvy than ever about what it is you actually want."
 >
-> **Check:** product names as transcribed were "Instinct" and "a Grokbot". Confirm them before naming either. Also, "that's always going to be correct" read as "that's *not* always going to be correct".
+> ---
+>
+> **3. Why it's hard to catch — tie back to what's already in the post**
+>
+> - The opening says you can't remember your last hallucination. This is why: **the errors moved from obviously wrong to slightly off**, and slightly off, delivered warmly, in a friendly format, is much harder to spot.
+> - These are your "just asking" requests from earlier in the post: no eval in your head, so nothing to catch it with.
+> - **The friendliness isn't neutral packaging.** Oxford researchers trained five models to be warmer and more empathetic, then tested them. The warm versions made **10 to 30 percentage points more errors** — incorrect facts, problematic medical advice, conspiracy theories — and were significantly more likely to **agree with a user's incorrect belief**, especially when the user sounded sad. Standard benchmarks didn't pick any of it up. (Ibrahim, Hafner & Rocher, *Nature* 652, 1159–1165, April 2026 — [preprint](https://arxiv.org/abs/2507.21919), [lab summary](https://syntheticsociety.oii.ox.ac.uk/research/warm-llm/).) ⚠️ Be precise: the study is about models *trained* for warmth, not about messaging apps. It shows warmth and reliability can trade off; it doesn't prove your agent is less accurate because it's in WhatsApp.
+>
+> ---
+>
+> **4. Bridge to the thumb-on-the-scales paragraphs**
+>
+> - Today the skew is towards whatever's popular and whatever's out of date. That steers you without anyone intending it.
+> - And the spot it occupies — inside your chats — is valuable enough to fight over. Meta changed WhatsApp's business terms in October 2025 so that, from 15 January 2026, AI providers can't offer a general-purpose assistant as the main service over its business platform. ChatGPT and Copilot left. Meta AI stayed. The European Commission opened an antitrust investigation. (The Register, ["EU probes Meta after WhatsApp kicked rival AIs off platform"](https://www.theregister.com/2025/12/04/eu_probes_meta_whatsapp_ai/), Dec 2025.)
+> - When companies go to an antitrust fight over who gets to be the friend in your messages, that's the "worth an enormous amount to anyone with something to sell" point made concrete — and it leads straight into your next paragraph.
+> - ⚠️ Word this carefully. The ban covers WhatsApp's *business* platform. The agents you use must reach WhatsApp another way, so don't write "AI was banned from WhatsApp" — readers who use one will notice.
+>
+> **Possible landing for the section:** you have to be more savvy than ever about what you actually want.
+>
+> ---
+>
+> **Checks before you write:**
+> - Product names came through as "Instinct" and "a Grokbot". Confirm them before naming either.
+> - "That's always going to be correct" read as "that's *not* always going to be correct".
+> - Length: this section could add 300–400 words to a ~1,200-word post. The house-redecorating paragraph earlier is the obvious cut — it's also in *Could I Build Something for This?*, so cutting it here resolves that overlap too.
+>
+> **Saved for elsewhere — the adoption side.** You also said the form factor is one of the big unlocks for adoption, attention and ongoing use. That's a product argument rather than a trust one, so it doesn't belong in this post — but it fits *The Product Overhang*, whose argument is that adoption is capped by how much change people will accept. The counter-case: things that live where your habits already are ask for almost no change. Supporting material, all verified:
+> - More than **50 million people** had used ChatGPT on WhatsApp by October 2025 (OpenAI, quoted by The Register, above).
+> - Microsoft, on leaving: *"Copilot on WhatsApp has helped millions of people connect with their AI companion in a familiar, everyday setting."* "A familiar, everyday setting" is the whole argument.
+> - WhatsApp users send around **7 billion voice messages a day** — WhatsApp's own figure, from [March 2022](https://techcrunch.com/2022/03/30/people-are-sending-7-billion-voice-messages-on-whatsapp-every-day), still the latest published. Voice notes are an existing habit; the agent just joined it.
+> - The 2016 contrast: Facebook opened Messenger to chatbots at F8 in April 2016. By early 2017 The Information reported they were failing on around **70% of requests**, and Facebook narrowed them to a small set of tasks ([The Register](https://www.theregister.com/software/2017/02/22/facebook-scales-back-ai-flagship-after-chatbots-hit-70-f-ai-lure-rate/434527)). Same form factor, not enough capability. Now the capability has caught up with the form factor.
 
 Same pattern again. And I don't want to overclaim here, because nobody really knows where this goes yet. But a recommendation that changes what you cancel, or buy, or book, is a different thing from a recommendation about your work. It's much closer to home, and it doesn't get weighed up. It just gets done.
 

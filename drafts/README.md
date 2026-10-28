@@ -6,8 +6,8 @@ Every blog post in progress, its status, and what it needs next.
 
 | # | Post | File | Words | Needs |
 |---|---|---|---|---|
-| 1 | **The Product Overhang** | `product-overhang.md` | ~800 | One concrete example (a product that shipped fast and landed on nobody, or a deal that stalled on training and sign-off) |
-| 3 | **When Did You Last Disagree With AI?** | `stopped-checking.md` | ~1,200 | Write the new personal-agents examples (notes in the draft, marked TO WRITE) |
+| 1 | **The Product Overhang** | `product-overhang.md` | ~800 | One concrete example (a product that shipped fast and landed on nobody, or a deal that stalled on training and sign-off). Optional new beat: form factor as the way round the adoption ceiling — notes under "Saved for elsewhere" in `stopped-checking.md` |
+| 3 | **When Did You Last Disagree With AI?** | `stopped-checking.md` | ~1,200 | Write the new form-factor section and personal-agent examples (notes in the draft, marked TO WRITE). Consider cutting the house-redecorating paragraph to make room |
 | 4 | **Faster Than the Meeting** | `faster-than-the-meeting.md` | ~2,100 | Superseded by #5 and #7. Treat as prose to borrow from, not a post to publish |
 
 ## Outlines
