@@ -101,16 +101,22 @@ Today I got mine to go through my inbox and unsubscribe from everything I haven'
 > **4. Bridge to the thumb-on-the-scales paragraphs**
 >
 > - Today the skew is towards whatever's popular and whatever's out of date. That steers you without anyone intending it.
-> - And the spot it occupies — inside your chats — is valuable enough to fight over. Meta changed WhatsApp's business terms in October 2025 so that, from 15 January 2026, AI providers can't offer a general-purpose assistant as the main service over its business platform. ChatGPT and Copilot left. Meta AI stayed. The European Commission opened an antitrust investigation. (The Register, ["EU probes Meta after WhatsApp kicked rival AIs off platform"](https://www.theregister.com/2025/12/04/eu_probes_meta_whatsapp_ai/), Dec 2025.)
-> - When companies go to an antitrust fight over who gets to be the friend in your messages, that's the "worth an enormous amount to anyone with something to sell" point made concrete — and it leads straight into your next paragraph.
-> - ⚠️ Word this carefully. The ban covers WhatsApp's *business* platform. The agents you use must reach WhatsApp another way, so don't write "AI was banned from WhatsApp" — readers who use one will notice.
+> - And the spot it occupies — inside your chats — is valuable enough to fight over, and the fight is still going:
+>   - **October 2025:** Meta changed WhatsApp's business terms so that AI companies can't offer a general-purpose assistant as the main service over its business platform, from 15 January 2026. ChatGPT, Copilot and Perplexity left. Meta AI stayed. ([The Register](https://www.theregister.com/2025/12/04/eu_probes_meta_whatsapp_ai/))
+>   - **December 2025:** the European Commission opened an antitrust investigation.
+>   - **March 2026:** Meta let rival chatbots back in Europe — for a fee of roughly €0.05–€0.13 per message. Meta's own example of what was still banned elsewhere: *"AI chatbots like ChatGPT, Claude, or Poke."* ([TechCrunch](https://techcrunch.com/2026/03/05/meta-will-allow-rival-ai-chatbots-on-whatsapp-in-europe-but-for-a-fee/))
+>   - **June 2026:** the Commission ordered Meta to restore free access for rival AI assistants on the old terms, until the investigation ends. Meta said it would appeal. ([Engadget](https://www.engadget.com/2191213/eu-orders-meta-to-stop-blocking-rival-ai-chatbots-on-whatsapp/))
+>   - I found no report of ChatGPT or Copilot returning, and the order appears to cover the EU/EEA only. Check the current position before you publish; it's moving.
+> - When a company is prepared to charge its rivals per message and then fight a regulator over who gets to be the friend in your messages, that's the "worth an enormous amount to anyone with something to sell" point made concrete — and it leads straight into your next paragraph.
+> - ⚠️ Word this carefully. The restrictions cover WhatsApp's *business* platform and vary by region. Nothing public explains how Instinct runs on WhatsApp, so don't write "AI was banned from WhatsApp" — readers using an agent there will notice — and don't state how Instinct gets round it.
 >
 > **Possible landing for the section:** you have to be more savvy than ever about what you actually want.
 >
 > ---
 >
 > **Checks before you write:**
-> - Product names came through as "Instinct" and "a Grokbot". Confirm them before naming either.
+> - **Instinct is confirmed:** an invite-only personal agent from Spear Street Technology. You can text it, WhatsApp it, iMessage it or call it. "A Grokbot" is still unconfirmed.
+> - **Optional, and strong if you want it:** Instinct's own terms sit awkwardly next to "a concierge in my pocket". TechCrunch reports they grant a *"perpetual and irrevocable"* licence to user materials, *"including for training its AI models"*, and allow it to enter into *"agreements, commitments, or transactions"* on your behalf that would be binding. The terms themselves say: *"You are solely responsible for ensuring that interactions the Services take with any Connected Service on your behalf are permitted."* The friend in your messages, and the small print behind it. ([TechCrunch, Aug 2026](https://techcrunch.com/2026/08/24/instincts-powerful-ai-assistant-is-raising-privacy-and-security-concerns/), [Instinct terms](https://instinct.com/terms))
 > - "That's always going to be correct" read as "that's *not* always going to be correct".
 > - Length: this section could add 300–400 words to a ~1,200-word post. The house-redecorating paragraph earlier is the obvious cut — it's also in *Could I Build Something for This?*, so cutting it here resolves that overlap too.
 >
