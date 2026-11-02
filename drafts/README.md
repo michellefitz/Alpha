@@ -14,6 +14,7 @@ Every blog post in progress, its status, and what it needs next.
 
 | # | Post | File | Needs |
 |---|---|---|---|
+| 2 | **The Agreement Loop / It's Always You** — the AI never breaks the loop; only you can | `outline-agreement-loop.md` | Decide where the manipulation section lives (here or #3). One specific session where you went round in circles |
 | 5 | **Product management** — de-risking was the job; engineering was never the constraint | `outline-product-management.md` | Write it, mostly from #4's prose |
 | 6 | **More Doers Than Deciders** — directing is the exhausting half | `outline-deciders.md` | A time you personally ran out of decisions |
 | 7 | **How I Build / "You gaming?"** — building taught you to spot when the AI is wrong | `outline-how-i-build.md` | Unwritten. One specific bad call you caught |
@@ -23,7 +24,7 @@ Every blog post in progress, its status, and what it needs next.
 
 ## Archived
 
-**Think With Me Not For Me** (`archive/agreement-loop.md`). The earlier, more researched version of #3. Archived in favour of #3; the agreement loop survives there in a few lines. Its MIT cognitive-debt study isn't in #3, so cite it directly if another post needs it.
+**Think With Me Not For Me** (`archive/agreement-loop.md`). The original agreement-loop post. Superseded by the revived #2, which has a new thesis; keep this as prose and research to borrow from (the loop diagram, the Karpathy story, the hotel-instructions story, the MIT cognitive-debt study).
 
 ## Project
 
@@ -31,6 +32,7 @@ Every blog post in progress, its status, and what it needs next.
 
 ## Overlaps to resolve
 
+- **#2 and #3 both carry the commercial-manipulation argument.** #3 has it in finished prose. Recommended: #2 owns the loop and "it's always you"; #3 owns trust, form factor and the finger on the scale.
 - **The "could I build software to solve this?" mantra** opens #4, #7 and #10. Pick one home.
 - **#7 and #10 overlap heavily**, and both use the flight tool. Merge them, or split cleanly: #7 is what building taught you, #10 is what you build.
 - **The house 3D model, mood boards and jacket examples** appear in #3 and #10.
