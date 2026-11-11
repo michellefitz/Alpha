@@ -20,7 +20,7 @@ Every blog post in progress, its status, and what it needs next.
 | 7 | **How I Build / "You gaming?"** — building taught you to spot when the AI is wrong | `outline-how-i-build.md` | Unwritten. One specific bad call you caught |
 | 8 | **Keep Your Eye on the Horizon** — you can't keep up, and nobody is | `outline-keeping-up.md` | Complete outline. Ready to write |
 | 9 | **Choices Without Guidance** — model pickers and effort sliders with no advice | `outline-choices-without-guidance.md` | Complete outline. Ready to write |
-| 10 | **Could I Build Something for This?** — software to see a problem, not to do a task | `outline-personal-software.md` | Complete outline. Ready to write |
+| 10 | **Could I Build Something for This?** — software to see a problem, not to do a task; the kind you keep still has a retention problem | `outline-personal-software.md` | Ready to write. Name one thing you built to keep that didn't stick |
 
 ## Archived
 

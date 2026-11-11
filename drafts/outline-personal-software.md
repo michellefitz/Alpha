@@ -7,6 +7,7 @@ Working titles:
 - Software to Think With
 - Cheaper to Build Than to Find
 - Software for Once
+- Your Own Worst Customer
 
 ---
 
@@ -18,9 +19,11 @@ Everything else is evidence for why that reflex now makes sense, and what it get
 
 1. **What changed:** building got cheaper than finding. A small prompt with very little direction gets you something good.
 2. **What you actually build:** not tools that *do* things — instruments that let you *see* things. To decide, or to learn.
-3. **How long it lives:** mostly once. That's fine — one-use can be the highest-value software you'll make.
+3. **How long it lives:** mostly once — and that's the part that works. One-use can be the highest-value software you'll make. **The software you build to keep runs into the oldest problem in product: retention.** You're your own customer, and the rules still apply.
 4. **Who it's for:** usually you, sometimes the person across the table, sometimes someone else's team.
 5. **What it costs you:** less checking than you'd think, *because* it's a thinking aid rather than the decision itself — and more taste than people admit.
+
+**The turn that makes this post yours:** most writing about personal software is enthusiastic about the kind you keep. You're enthusiastic about the disposable kind and sceptical about the kept kind, from experience. That's where you part company with Waxman.
 
 ---
 
@@ -110,9 +113,45 @@ Points to hit:
 - Name the on-the-fly category. It doesn't have an accepted name yet; Willison calls his only *"an experiment in prompt-driven development with very low stakes."*
 
 Substance:
-- **[Adam Waxman, "Software for One", 28 July 2026](https://www.ajwaxman.com/writing/software-for-one)** — the recent version of the personal-software half, and he argues *"ephemeral is fine"*: he retired his sleep app after four months. **Read it before you write** — he's written the default version of the kept-software column, so don't compete there.
+- **[Adam Waxman, "Software for One", 28 July 2026](https://www.ajwaxman.com/writing/software-for-one)** — the recent version of the personal-software half, and he argues *"ephemeral is fine"*: he retired his sleep app after four months. **Read it before you write** — he's written the enthusiastic version of the kept-software column. Section 5 is where you disagree with him.
 
-### 5. Building for other people
+### 5. Your own worst customer
+
+**Does:** the turn. The disposable kind works; the kind you build to keep runs into the oldest problem in product. This is the most original section in the post — give it room.
+
+Points to hit:
+- You built products you thought you'd love. *This is so cool.* And you're not always using them.
+- It's the same trap any product person falls into. The customer tells you the solution they want, you build exactly that, it doesn't stick, and you can't work out why — *but I gave them exactly what they asked for.*
+- The old rule: **customers are experts in their problems, not their solutions.** When you build for yourself, you're the customer. The rule still applies.
+- The PM's arrogance: of course that doesn't apply to me, I'm a product person. It totally does.
+- Be honest about why some were overcooked: you were looking for cool ways to apply the technology, rather than solving something that nagged at you.
+- The contrast with the decision tools: built for a point problem, used, done. Nothing to retain, because nothing needed to come back. *Once it's done, it's done.*
+- Why the kept kind struggles: what makes people come back to consumer software is really hard, almost magic — other people, new content, network effects, surprise.
+- Your own software has none of that. You designed it, so it can't surprise you. No new release, no *"check out what's new."* Nobody else in it.
+- It's double-edged. Sloan loved that nobody would ever redesign his app or fill it with ads — that's the same fact as nothing new ever arriving.
+- Who'll keep using software they built: the same people who always hacked things to fit their lives. Most people want the off-the-shelf thing and have no interest in customising it. AI didn't change that.
+- Land it: all the problems of building for other people — getting them to come back — turn out to apply when the only user is you.
+
+Your raw quotes:
+- "The problems of retention are the exact same. They haven't changed."
+- "But I gave them exactly what they said they wanted. Why aren't they using it?"
+- "Customers are experts in their problems, not in their solutions."
+- "As a PM, you can have an arrogance that, of course, as a product person, that doesn't apply to me, but it totally does."
+- "I think some of them were overcooked."
+- "Once it's done, it's done."
+- "What makes people come back to a product, particularly consumer software, is really fucking hard. There's a magic in it." *(your call on the swear — see the note in the keeping-up outline)*
+- "You're not going to get new surprise releases or discover things, because you designed the whole thing."
+- "Nope, it's your product."
+- "Turns out it happens even with your own software."
+
+Substance:
+- **The IKEA effect explains "I thought I'd love it".** In experiments where people assembled IKEA boxes, folded origami and built Lego, they valued what they'd made themselves more highly than the same things made by someone else. The effect held only when they finished — failed or destroyed builds lost it — and it appeared even in people who said they had no interest in DIY. Building it is part of why you rate it. (Norton, Mochon & Ariely, ["The IKEA effect: When labor leads to love"](https://www.hbs.edu/faculty/Pages/item.aspx?num=41121), *Journal of Consumer Psychology*, 2012.)
+- **The tinkerers have always been a small group.** When Jared Spool's team collected people's Microsoft Word settings files, fewer than 5% had changed any setting at all — and programmers and designers almost always had. Building your own software is a much bigger step than changing a setting. (UIE, ["Do users change their settings?"](https://archive.uie.com/brainsparks/2011/09/14/do-users-change-their-settings/), 2011.) ⚠️ One product, fifteen years ago — use it as an illustration, not a measurement.
+- **The exception that proves your rule: Sloan's app is full of people.** BoopSnoop has lasted years with four users, but it's a messaging app for his family — the reason to open it is a new message from his mum. That's exactly the "other people and new content" you say kept software lacks. The personal software that survives tends to have someone else in it. *(My reading, not Sloan's claim — say it as yours.)*
+- **Professionally built apps lose most of their users fast too.** Industry benchmarks put average day-30 retention in single digits — roughly 4–7%, depending on the source. ⚠️ I only found these in secondary roundups of AppsFlyer and Adjust data. Either check their own reports or say "most apps lose most of their users within a month" without a number.
+- Waxman's sleep app fits your point-problem side: he retired it after four months because the problem went away. A point problem with a long point.
+
+### 6. Building for other people
 
 **Does:** shows the reflex isn't only personal. Short, and a nice turn.
 
@@ -122,7 +161,7 @@ Points to hit:
 - What the demo did that a conversation couldn't: her team could see it, click through a crisis, and decide whether to develop it.
 - The broader point: a working prototype replaces the meeting about what an app *might* be. Same reflex as the flights — build the thing so people can see it — aimed outward.
 
-### 6. It isn't even always software
+### 7. It isn't even always software
 
 **Does:** resolves the artifact question honestly. One short section, or fold into section 3.
 
@@ -136,7 +175,7 @@ Your raw material:
 
 **Decision needed** — see challenges below.
 
-### 7. How much should you trust it?
+### 8. How much should you trust it?
 
 **Does:** the credibility section. Your honest answer makes it stronger than I'd expected.
 
@@ -150,7 +189,7 @@ Points to hit:
 Your raw material:
 > "Using them to think through stuff more than being the only input into the decision."
 
-### 8. Play
+### 9. Play
 
 **Does:** the warm note, and a bridge to the keeping-up post. Keep it to a few lines.
 
@@ -159,23 +198,24 @@ Points to hit:
 - You used Claude for the 3D and Blender work and ChatGPT for images, without anyone telling you which was better at what. You found out by playing.
 - Low-stakes building is where you learn what these things can do, because on real work you stick to what you know works.
 
-### 9. Close
+### 10. Close
 
 Points to land:
 - The mantra, as the thing the reader takes away: next time you hit a question, ask whether building something would help you see it.
 - It probably would, and it probably takes minutes.
+- The qualifier from section 5: build it for the question, not to keep. The disposable kind is the real shift; the kept kind is still a product, with a product's problems.
 - Don't tie a bow.
 
 ---
 
 ## Challenges
 
-**1. Software, or things to think with?** Section 6 forces a choice:
+**1. Software, or things to think with?** Section 7 forces a choice:
 - **Narrow:** keep the post about software, and drop or footnote the jackets and mood boards. Cleaner, and the mantra stays literal.
 - **Widen:** make the subject "bespoke representations to think with," with software as the strongest case. More true to what you actually do, slightly less crisp.
 - My recommendation: **keep the title and mantra about software, and use the jackets as one short "and it isn't even always software" beat.** It acknowledges the wider truth without diluting the hook. If shopping keeps growing as a theme for you, it's its own post — and it connects to the agent-payments material in your horizon call.
 
-**2. Do you have a real piece of *personal* software?** Almost everything you've described is on-the-fly. If there's something you genuinely keep and use week after week, it should be in the post. If there isn't, that's fine — but then lean fully into software-for-once and let personal software be a short contrast rather than half the taxonomy.
+**2. Is there one that stuck?** You've answered the old question: mostly, you don't keep using what you built to keep (section 5). If one *has* stuck, give it a line and test it against the pattern — does it have other people in it, or fresh data coming in? If so, that's why it survived. If none have stuck, say so; it's the stronger claim. Either way, name one that didn't stick and why — the overcooked one is the most persuasive example you have.
 
 **3. Name the on-the-fly category.** Still unclaimed. "Software for once" pairs neatly with Waxman's "software for one" — worth considering, or find your own. A named idea gets cited.
 
@@ -194,12 +234,14 @@ Points to land:
 3. **[Robin Sloan, "An app can be a home-cooked meal"](https://www.robinsloan.com/notes/home-cooked-app/)** (Feb 2020) — four users, zero churn; "in a better world, I would have built this in a day."
 4. **[Adam Waxman, "Software for One"](https://www.ajwaxman.com/writing/software-for-one)** (July 2026) — the AI-era personal-software post. Read first; "ephemeral is fine."
 5. **Clay Shirky on situated software** (2004), quoted by Sloan — *"it is personal from its inception."* Optional.
+6. **[Norton, Mochon & Ariely, "The IKEA effect"](https://www.hbs.edu/faculty/Pages/item.aspx?num=41121)** (*Journal of Consumer Psychology*, 2012) — people overvalue what they built themselves, even people with no interest in DIY. Anchors section 5.
+7. **[Jared Spool, "Do users change their settings?"](https://archive.uie.com/brainsparks/2011/09/14/do-users-change-their-settings/)** (UIE, 2011) — fewer than 5% changed any Word setting; programmers and designers almost always did.
 
 ---
 
 ## Structural notes
 
-- **Length:** 1,200–1,500. Section 3 gets the most words; 2, 5, 6 and 8 should be short.
+- **Length:** 1,400–1,700 with the new section. Sections 3 and 5 get the most words; 2, 6, 7 and 9 should be short. If it runs long, cut section 7 (it isn't always software) first.
 - **Biggest risk:** becoming a tour of cool things you built. The examples are evidence for the mantra and the see-not-do pattern — each one has to earn its place by showing something new. Flights shows the reflex. Windows shows the two-person moment. Crisis sim shows building for others. Jackets shows it isn't only software. The walkthrough and mood boards may be one example too many; pick the stronger.
 - **Second risk:** section 2 swelling. Everyone writes "AI made building cheap." One paragraph.
 - **Register:** this is your most delighted material — "it was just insane," "it's crazy." Let that show; it's the opposite energy to the keeping-up post, and it should be.
